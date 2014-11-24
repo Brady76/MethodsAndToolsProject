@@ -74,9 +74,32 @@ As a programmer, it is always good to practice using comments often. Generally, 
 Using namespace std
 --------
 
-The key to becoming a great programmer is practice. In these tutorials, we have provided templates and test files for you to practice implementing your own code. Each section will have their own assignment in which you can practice writing your own code, and test files for each assignment so you'll know whether or not you have implemented your code correctly.
+More often than not, there are generally multiple ways to write and implement code that yield in the same results. As you begin to write more code, you will develop your own style to implementing programs that will differ from other programmers. For this lesson, we will show you how to implement your own "Hello World" program without using **std::cout**.
 
-Remember, learning how to program takes a bit of patience, so be sure that you take your time when going through these lessons.
+If you have seen C++ code before, you may have seen cout being used instead of std::cout. Both name the same object. The first one uses its unqualified name **(cout)**, while the second qualifies it directly within the namespace std **(std::cout)**.
 
-Have fun!
+**cout** is part of the standard library, and all the elements in the standard C++ library are declared within what is a called a namespace: the namespace std.
 
+In order to refer to the elements in the std namespace, a program shall either qualify each and every use of elements of the library (as we have done by prefixing cout with std::), or introduce visibility of its components. The most typical way to introduce visibility of these components is by means of using declarations:
+	
+	using namespace std;
+
+The above declaration allows all elements in the std namespace to be accessed in an unqualified manner (without the std:: prefix).
+
+We can implement the Hello World program using std namespace in an unqualified manner. Running the program will yield the same results as our previous implementation, but we see that this version has improved readability.
+
+	// my second program in C++
+	#include <iostream>
+	using namespace std;
+
+	int main ()
+	{
+		cout << "Hello World! ";
+	}
+
+Assignment #1: Hello World
+--------
+
+For our first practice assignment, we will implement our own version of our "Hello World" program.
+
+Your code should print out **Hello World** and **This is my first C++ program**.
