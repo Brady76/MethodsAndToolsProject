@@ -16,14 +16,14 @@ The best way to learn a programming language is by writing programs. Here, we ha
 		std::cout << "Hello World!";
 	}
 
-+ **Line 1: // My first program in C++** 
-The two slash signs, "//"  indicate that the line is a comment by the programmer. Typically, programmers use these comments as observations or descriptions of the program or function that succeeds the comment. Comments have no effect on the behavior of the program itself, but they are useful tools that help the user understand what the actual code is doing. In this example, the comment just states what the name of the program is.
++ **Line 1: // My first program in C++**:
+	The two slash signs, "//"  indicate that the line is a comment by the programmer. Typically, programmers use these comments as observations or descriptions of the program or function that succeeds the comment. Comments have no effect on the behavior of the program itself, but they are useful tools that help the user understand what the actual code is doing. In this example, the comment just states what the name of the program is.
 
-+ **Line 2: #include <iostream>** 
-Lines beginning with a hash sign (#) are directives read and interpreted by what is known as the preprocessor. They are special lines interpreted before the compilation of the program itself begins. In this case, the directive #include <iostream>, instructs the preprocessor to include a section of standard C++ code, known as header iostream, that allows to perform standard input and output operations, such as writing the output of this program (Hello World) to the screen.
++ **Line 2: #include <iostream>**:
+	Lines beginning with a hash sign (#) are directives read and interpreted by what is known as the preprocessor. They are special lines interpreted before the compilation of the program itself begins. In this case, the directive #include <iostream>, instructs the preprocessor to include a section of standard C++ code, known as header iostream, that allows to perform standard input and output operations, such as writing the output of this program (Hello World) to the screen.
 
 * **Line 3: A blank line.**
-Blank lines have no effect on a program. They simply improve readability of the code.
+	Blank lines have no effect on a program. They simply improve readability of the code.
 
 * **Line 4: int main ()**
 This line initiates the declaration of a function. A function is a section of code that performs a certain task. Every function is given first be a data type: in this case is **int**. After the data type is declared, the function is given a name: in this case, the name given is **main**. The name of functions are intoducted with a succession of a type of data that they are processing. The **()** following main are parameters. The function named main is a special function in all C++ programs; it is the function called when the program is run. The execution of all C++ programs begins with the main function, regardless of where the function is actually located within the code. We will go discuess functions in greater detail in a later chapter.
