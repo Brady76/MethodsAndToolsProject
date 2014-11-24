@@ -46,13 +46,32 @@ Notice that the statement ends with a semicolon (;). Similar to how a period end
 
 
 
-Executable Terminal Program
+Comments
 ---------
 
-Similar to any spoken language, C++ and all programming languages have a specific syntax or way on how things are written. To give you practice on C++ syntax, each lesson will include an interactive file that allows you to practice typing in the C++ language. 
+As noted above, comments do not affect the operation of the program. Though they do not change the nature of the program itself, they are useful tools to document the source code directly on what the program does and how it operates.
+
+C++ supports two ways of commenting code
+	
+	//line comment
+	/* Block Coment */
+
+1. **Line Comments**: Line comments discard everything from where the pair of slash signs (//) are found up to the end of that same line. 
+2. **Block Comments**: Block comments discard everything between the /* characters and the first appearance of the */ characters, with the possibility of including multiple lines.
+
+As a programmer, it is always good to practice using comments often. Generally, we use comments in functions to help us understand and keep track of what the program is doing. Let's practice by adding comments to the "Hello World" program we previously implemented.
+
+	//my first program in C++
+	#include <iostream>
+	
+	int main()
+	{
+		std::cout << "Hello World!"; //standard output stream that takes and prints "Hello World"
+	}
 
 
-Practice Assignemnts
+
+Using namespace std
 --------
 
 The key to becoming a great programmer is practice. In these tutorials, we have provided templates and test files for you to practice implementing your own code. Each section will have their own assignment in which you can practice writing your own code, and test files for each assignment so you'll know whether or not you have implemented your code correctly.
