@@ -17,9 +17,11 @@ The best way to learn a programming language is by writing programs. Here, we ha
 	}
 
 + **Line 1: // My first program in C++**
-⋅⋅* The two slash signs, "//"  indicate that the line is a comment by the programmer. Typically, programmers use these comments as observations or descriptions of the program or function that succeeds the comment. Comments have no effect on the behavior of the program itself, but they are useful tools that help the user understand what the actual code is doing. In this example, the comment just states what the name of the program is.
+
+The two slash signs, "//"  indicate that the line is a comment by the programmer. Typically, programmers use these comments as observations or descriptions of the program or function that succeeds the comment. Comments have no effect on the behavior of the program itself, but they are useful tools that help the user understand what the actual code is doing. In this example, the comment just states what the name of the program is.
 + **Line 2: #include <iostream>**
-⋅⋅* Lines beginning with a hash sign (#) are directives read and interpreted by what is known as the preprocessor. They are special lines interpreted before the compilation of the program itself begins. In this case, the directive #include <iostream>, instructs the preprocessor to include a section of standard C++ code, known as header iostream, that allows to perform standard input and output operations, such as writing the output of this program (Hello World) to the screen.
+
+Lines beginning with a hash sign (#) are directives read and interpreted by what is known as the preprocessor. They are special lines interpreted before the compilation of the program itself begins. In this case, the directive #include <iostream>, instructs the preprocessor to include a section of standard C++ code, known as header iostream, that allows to perform standard input and output operations, such as writing the output of this program (Hello World) to the screen.
 * **Line 3: A blank line.**
 ⋅⋅* Blank lines have no effect on a program. They simply improve readability of the code.
 * **Line 4: int main ()**
