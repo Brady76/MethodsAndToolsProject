@@ -103,5 +103,9 @@ Assignment #1: Hello World
 For our first practice assignment, we will implement our own version of our "Hello World" program.
 Open the **HelloWorld.cpp** file and edit/implement your code there.
 
-In order to pass the test file, your code will have to print out **Hello World** and **This is my first C++ program**.
+In order to pass the test file, your code must include a function **int main()** that:
+1. Prints **Hello World** 
+2. Prints **This is my first C++ program**.
 Remember that capilization and spelling matters, so be sure to double check your work before running the test file.
+
+Good luck!
