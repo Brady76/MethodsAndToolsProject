@@ -47,6 +47,7 @@ This project will introduce beginners to the basics of C++
 
 #### Lesson 4.1: Intro to Statements
 **Goal:** Introduce different types of statements. We will introduce the following concepts in this tutorial:
+
 1. If Statments
 2. For Statements
 3. While
