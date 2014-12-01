@@ -2,9 +2,13 @@ MethodsAndToolsProject
 ======================
 
 Gamified C++ Curriculum 
+
 Basics of C++
+
 Structure of a Program
+
 Goal: Introduce what a basic c++ program looks like/ introduce cout command
+
 Comments
 Namespace 
 #include
