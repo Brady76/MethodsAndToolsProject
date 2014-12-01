@@ -30,29 +30,41 @@ This project will introduce beginners to the basics of C++
 **Exercise:** Quiz on different data types. This quiz quiz will be on our HTML website that will have a hide/show solution function.
 
 ### Lesson 3: Operators
-Goal: Introduce basic operators
-Variable assignment
-basic arithmetic
-addition, subtraction, multiplication, division
-string arithmetic
-Exercise: Implement basic functions program
-Control Structures
-Intro to statements
-Goal: Introduce different types of statements
-If
-For
-While
-Jump Statements
-Break Statements
-Continue Statements
-Quiz: What would be the output?
-Exercise: Implement a program using various types of loops
-If: Tell whether an number is even or odd
-For: write a summation function
-int summation that takes parameter n
-While: while your iterator is <= 16, print nah. if it is greater than 16, print batman
-have iterator count up until 17 and returns batman
-Functions
-Goal: Introduce functions (Structure program in segments of code to perform certain tasks)
-Exercise: Brady can do this
 
+**Goal:** Introduce basic operators. We will introduce the following concepts in this tutorial:
+
+1. Variable assignment
+2. basic arithmetic
+--*addition 
+--*subtraction 
+--*multiplication 
+--*division
+3. string arithmetic
+
+**Exercise:** Implement basic functions program that manipulates strings and numbers.
+
+### Lesson 4: Control Structures (this section will be broken down into 2 parts)
+
+#### Lesson 4.1: Intro to Statements
+**Goal:** Introduce different types of statements. We will introduce the following concepts in this tutorial:
+1. If Statments
+2. For Statements
+3. While
+4. Jump Statements
+5. Break Statements
+6. Continue Statements
+
+**Quiz:** What would be the output? (Quiz on different inputs regarding various statements. This quiz quiz will be on our HTML website that will have a hide/show solution function.)
+
+**Exercise:** Implement a program using various types of loops
+1. If: Tell whether an number is even or odd
+2. For: write a summation function
+3. int summation that takes parameter n
+4. While: while your iterator is <= 16, print nah. if it is greater than 16, print batman
+--* implement an iterator count up until 17 and returns batman
+
+#### Lesson 4.2: Functions
+
+**Goal:** Introduce functions (Structure program in segments of code to perform certain tasks)
+
+**Exercise:** Brady can do this
