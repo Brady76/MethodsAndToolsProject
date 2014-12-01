@@ -48,20 +48,22 @@ This project will introduce beginners to the basics of C++
 #### Lesson 4.1: Intro to Statements
 **Goal:** Introduce different types of statements. We will introduce the following concepts in this tutorial:
 
-1. If Statments
-2. For Statements
-3. While
-4. Jump Statements
-5. Break Statements
-6. Continue Statements
+1. If Loops
+2. For Loops
+3. While Loops
+4. Different statements
+--* Jump Statements
+--* Break Statements
+--* Continue Statements
 
 **Quiz:** What would be the output? (Quiz on different inputs regarding various statements. This quiz quiz will be on our HTML website that will have a hide/show solution function.)
 
 **Exercise:** Implement a program using various types of loops
+
 1. If: Tell whether an number is even or odd
 2. For: write a summation function
-3. int summation that takes parameter n
-4. While: while your iterator is <= 16, print nah. if it is greater than 16, print batman
+--* int summation that takes parameter n
+3. While: while your iterator is <= 16, print nah. if it is greater than 16, print batman
 --* implement an iterator count up until 17 and returns batman
 
 #### Lesson 4.2: Functions
