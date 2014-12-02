@@ -104,8 +104,10 @@ For our first practice assignment, we will implement our own version of our "Hel
 Open the **HelloWorld.cpp** file and edit/implement your code there.
 
 In order to pass the test file, your code must include a function **int main()** that:
+
 1. Prints **Hello World** 
 2. Prints **This is my first C++ program**.
+
 Remember that C++ is a case sensitive language and that spelling matters, so be sure to double check your work before running the test file.
 
 Good luck!
