@@ -8,12 +8,6 @@ using namespace std;
  * Return the remainder of dividing x by z
 */
 int functolicious(int x, int y, int z){
-	x += 5;
-	y -= 3;
-	z *= 7;
-	x *= y;
-	x = x - y;
-	return x % z;
 }
 
 
