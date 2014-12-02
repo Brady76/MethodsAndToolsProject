@@ -3,7 +3,7 @@ using namespace std;
 
 /*A quick note on functions, inside the parentheses of functolicous and repeatthrice are parameters (like x, y, z), these are values that come from outside the function as input, so just assume they are
  * previously declared & initialized variables.  When you get the final solution in a variable you'll want to return it, so for example if we have variable x in repeatthrice and it has our final answer
- * of the word repeated three times, our last line of code should be return x; 
+ * of the word repeated three times, our last line of code should be return x; If this doesn't make sense you still, go through lesson 4 and come back to this assignment afterwards
  */ 
 
 /*We want functolicious to do these things in order:
