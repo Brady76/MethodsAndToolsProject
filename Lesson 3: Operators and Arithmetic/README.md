@@ -96,3 +96,7 @@ string x = "hello";
 x += "hi";
 
 At this point, x would contain "hellohi"
+
+Assignment
+----------
+We have a coding assignment for you to work on, follow the instructions in the comments above each function and run it when you're done to see if you passed.
