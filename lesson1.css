@@ -2,10 +2,7 @@ body {background: #ffffff; margin: 0; padding: 0;}
 a {color: #2b2bf6;}           
 #container {width: 1285px; margin: 0; padding: 0; background: #dddddd;}           
 #title {width: 1285px; 	height: 300px; 	margin: 0; padding: 0; border: 0; background-image:url("dynamic.jpg");font-family: Arial; font-size: 70px; color: white}           
-#navigation {width: 285px; height: 800px; 	margin: 0; padding: 0; border: 0; float: left; background: #f0e811; font-family: Arial; font-size: 30px}           
-#description {width: 1000px; height: 800px; 	margin: 0; padding: 0; border: 0; float: left; background: green}   
-#description p {font-family: Arial; font-size: 25px; background: green}                  
+#sidebar {width: 285px; height: 800px; 	margin: 0; padding: 0; border: 0; float: left; background: #f0e811;}           
+#content {width: 1000px; height: 800px; 	margin: 0; padding: 0; border: 0; float: left; background-color:blue ;}   
+#content p {font-family: Arial; font-size: 25px}                  
 #footer {width: 1285px; 	height: 140px; 	margin: 0; padding: 0; border: 0; float: left; background: #000000; clear:both;font-family: Arial; font-size: 20px; color: white}
-
-                            
-
