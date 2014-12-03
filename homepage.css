@@ -1,0 +1,11 @@
+body {background: #ffffff; margin: 0; padding: 0;} 
+a {color: #2b2bf6;}           
+#container {width: 1285px; margin: 0; padding: 0; background: #dddddd;}           
+#header {width: 1285px; 	height: 300px; 	margin: 0; padding: 0; border: 0; background: #0000ff;font-family: Arial; font-size: 70px}           
+#sidebar {width: 285px; height: 800px; 	margin: 0; padding: 0; border: 0; float: left; background: #f0e811;}           
+#content {width: 1000px; height: 800px; 	margin: 0; padding: 0; border: 0; float: left; background: #00ff00;}   
+#content p {font-family: Arial; font-size: 25px}                  
+#footer {width: 1285px; 	height: 140px; 	margin: 0; padding: 0; border: 0; float: left; background: #000000; clear:both;font-family: Arial; font-size: 20px; color: white}
+
+                            
+
