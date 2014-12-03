@@ -17,14 +17,72 @@
 		</ul>
 	</nav>
 <div id="content"> 
-	<p>Welcome to the C++ tutorials! The lessons in these tutorials are primarily designed to help beginning level programmers get
-	a hands on grasp of the fundamentals of C++. Each turtorial is broken down into sections which contain examples, in depth 
-	explainations of code, and practice files for users to implement and test their own code! there is no suggested amount of 
-	time that you should spend with each section; progress through the material at a pace that is comfortable for you.
-	Before we get started, you will find that each chapter of this curriculum will be structured in a similar fashion.</p>
-	<h1>Lesson</h1>
-	In order to code, it is important to understand the basic concept on how C++ works. Each section will contain a README.md file that
-	 provides a detailed description on how the specific topic covered works, and a tutorial on how to implement that specific code.
+	<p>Welcome to Lesson 1 of C++ tutorials! This lesson will introduce the basic structure of a C++ program. You will also implement
+	 your first program called "Hello World". Although it is a very simple, it contains the fundamental components of a C++ program.
+	</p>
+	<h1>Hello World</h1>
+	The best way to learn a programming language is by writing programs. Here, we have a basic program that prints "Hello World" (which is typically the first program that beginners write). We have broken down the program line by line to discuss what each component of our program does.
+	<pre>
+		//my first program in C++
+		#include &lt iostream &gt
+		int main();
+		{
+			std::cout &lt &lt "Hello World!";
+		}
+	</pre>
+	<h3> Line 1: // My first program in C++: </h3>
+	The two slash signs, "//" indicate that the line is a comment by the programmer. Typically, programmers use these 
+	comments as observations or descriptions of the program or function that succeeds the comment. 
+	Comments have no effect on the behavior of the program itself, but they are useful tools that help the user understand 
+	what the actual code is doing. In this example, the comment just states what the name of the program is.
+	
+	<h3> Line 2: #include : </h3>
+	Lines beginning with a hash sign (#) are directives read and interpreted by what is known as the preprocessor. They are special
+	lines interpreted before the compilation of the program itself begins. In this case, the directive #include , instructs the 
+	preprocessor to include a section of standard C++ code, known as header iostream, that allows to perform standard input 
+	and output operations, such as writing the output of this program (Hello World) to the screen.
+	
+	<h3> Line 3: A blank line.:</h3>
+	Blank lines have no effect on a program. They simply improve readability of the code.
+	
+	<h3> Line 4: int main():</h3>
+	This line initiates the declaration of a function. A function is a section of code that performs a certain task.
+	Every function is given first be a data type: in this case is int. After the data type is declared, the function
+	is given a name: in this case, the name given is main. The name of functions are introduced with a succession of
+	a type of data that they are processing. The () following main are parameters. The function named main is a special
+	function in all C++ programs; it is the function called when the program is run. The execution of all C++ programs
+	begins with the main function, regardless of where the function is actually located within the code. We will discuss
+	functions in greater detail in a later chapter.
+	
+	<h3>line 5 and 7: {and}: </h3>
+	The open brace { at line 5 indicates the beginning of main's function definition, and the closing brace } at line 7, 
+	indicates its end. The statements within the brackets form defines what happens when main is called. All functions use 
+	braces to indicate the beginning and end of their definitions.
+
+	<h3> Line 6:std::cout<<"Hello World!";:</h3>
+	    This line is a C++ statement. A statement is an expression that can actually produce some effect. It specifies what 
+	    the program does, essentially encapsulating the bulk of the program. Statements are executed in the same order that 
+	    they appear within a function's body.
+	    
+	<h3>3 parts of Line 6</h3>
+	
+	<h4>1. std:: cout :</h4>
+	Identifies the standard character output device (usually, this is the computer screen).
+	
+	<h4> 2. << :</h4>
+	 Is the insertion operator. This indicates what follows << is inserted into std::cout.
+	
+	<h4> 3. "Hello world!" : </h4>
+	The sentence we wish to print within quotes. This sentence is the content inserted into the standard output. Be sure to 
+	include the quotation marks!
+	 <p>Notice that the statement ends with a semicolon (;). 
+	 Similar to how a period ends a sentence in English, a semicolon marks the end of a statement in C++. 
+	 All C++ statements must end with a semicolon character. 
+	 One of the most common syntax errors in C++ is forgetting to end a statement with a semicolon.
+	 </p>
+	
+
+	
 	<h1>Executable Terminal Program</h1>
 	Similar to any spoken language, C++ and all programming languages have a specific syntax or way on how things are written. To give 
 	you practice on C++ syntax, each lesson will include an interactive file that allows you to practice typing in the C++ language.
