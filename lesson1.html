@@ -22,8 +22,8 @@
 	 your first program called "Hello World". Although it is a very simple, it contains the fundamental components of a C++ program.
 	</p>
 </div>
+
 <div id="content"> 
-	
 	<h1>Hello World</h1>
 	The best way to learn a programming language is by writing programs. Here, we have a basic program that prints "Hello World" (which is typically the first program that beginners write). We have broken down the program line by line to discuss what each component of our program does.
 	<pre>
@@ -85,17 +85,80 @@
 	 One of the most common syntax errors in C++ is forgetting to end a statement with a semicolon.
 	 </p>
 	
-
-	
-	<h1>Executable Terminal Program</h1>
-	Similar to any spoken language, C++ and all programming languages have a specific syntax or way on how things are written. To give 
-	you practice on C++ syntax, each lesson will include an interactive file that allows you to practice typing in the C++ language.
-	<h1>Practice Assignments</h1>
-	The key to becoming a great programmer is practice. In these tutorials, we have provided templates and test files for you to 
-	practice implementing your own code. Each section will have their own assignment in which you can practice writing your own code, 
-	and test files for each assignment so you'll know whether or not you have implemented your code correctly.
-	Remember, learning how to program takes a bit of patience, so be sure that you take your time when going through these lessons.
-	Have fun!
+	<h1>Comments</h1>
+	<p>
+	As noted above, comments do not affect the operation of the program. Though they do not change the nature of the program itself,
+	they are useful tools to document the source code directly on what the program does and how it operates.
+	</p>
+	<p>
+		C++ supports two ways of commenting code
+	</p>
+	<pre>
+		// line comment
+		/* Block Comment */ 
+	</pre>
+	<h4> 1. Line Comments: </h4>
+	<p> Line comments discard everything from where the pair of slash signs (//) are found up to the end of that same line.</p>
+	<h4> 2. Block Comments: </h4>
+	<p> 
+	 Block comments discard everything between the /* characters and the first appearance of the */ characters, with the possibility of
+	 including multiple lines.
+	 </p>
+	 
+	 <p>
+		 As a programmer, it is always good to practice using comments often. Generally, we use comments in functions to help us
+		 understand and keep track of what the program is doing. Let's practice by adding comments to the "Hello World" program
+		 we previously implemented.
+	 </p>
+	 <pre>
+		//my first program in C++
+		#include &lt iostream &gt
+		int main();
+		{
+			std::cout &lt &lt "Hello World!"; //standard output stream that takes and prints "Hello World"
+		}
+	</pre> 
+	 
+	<h1>Using namespace std</h1>
+	<p>
+		More often than not, there are generally multiple ways to write and implement code that yield in the same 
+		results. As you begin to write more code, you will develop your own style to implementing programs that will differ 
+		from other programmers. For this lesson, we will show you how to implement your own "Hello World" program without using
+		std::cout. 
+	</p>
+	<p>
+		If you have seen C++ code before, you may have seen cout being used instead of std::cout. Both name the same object. The first
+		one uses its unqualified name (cout), while the second qualifies it directly within the namespace std (std::cout).
+	</p>
+		
+	<p>
+		cout is part of the standard library, and all the elements in the standard C++ library are declared within what is a called 
+		a namespace: the namespace std.
+	</p>
+	<p>
+		In order to refer to the elements in the std namespace, a program shall either qualify each and every use of elements of the 
+		library (as we have done by prefixing cout with std::), or introduce visibility of its components. The most typical way to 
+		introduce visibility of these components is by means of using declarations:
+	</p>
+	<pre>
+		using namespace std;
+	</pre>
+	<p>
+		The above declaration allows all elements in the std namespace to be accessed in an unqualified manner (without the std:: 
+		prefix).
+	</p>
+	<p>
+		We can implement the Hello World program using std namespace in an unqualified manner. Running the program will yield the 
+		same results as our previous implementation, but we see that this version has improved readability.
+	</p>
+		 <pre>
+		//my second program in C++
+		#include &lt iostream &gt
+		int main()
+		{
+			cout &lt &lt "Hello World!";
+		}
+	</pre> 
 <div id="footer"> CSCI 3308 Software Methods and Tools Project Brady Auen, Deep Desai, Kevin Vo </div>
 </body>
 </html>

@@ -5,6 +5,7 @@ a {color: #2b2bf6;}
 #sidebar {width: 285px; height: 300px; 	margin: 0; padding: 0; border: 0; float: left; background: #f0e811;}           
 #intro {width: 1000px; height: 300px; margin: 0; padding: 0; border: 0; float: left; background: red; }
 #intro p {font-family: Arial; font-size: 25px}
-#content {width: 1285px; height: 3000px; 	margin: 0; padding: 0; border: 0; float: left; background-color:blue ;}   
-#content p {font-family: Arial; font-size: 20px}                  
+#content {width: 1285px; height: 2600px; 	margin: 0; padding: 0; border: 0; float: left; background-color:blue ;}   
+#content p {font-family: Arial; font-size: 20px}
+#assignment {width: 1285px; height: 500px; 	margin: 0; padding: 0; border: 0; float: left; background-color:blue ;}           
 #footer {width: 1285px; 	height: 140px; 	margin: 0; padding: 0; border: 0; float: left; background: #000000; clear:both;font-family: Arial; font-size: 20px; color: white}
