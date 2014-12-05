@@ -9,10 +9,10 @@ A variable provides us with named storage that our programs can manipulate. Each
 
 So why use variables? Suppose we are asked to remember the number 2, and then we are asked to also memorize the number 7 at the same time. We now have 2 different values stored in our memory (2 and 7). Now, if we were asked to add 1 to the first number stired, we should retain the numbers 3 (that is 2+1) and 7 in our memory. Then we could, for example, add these values and obtain 10 as result.
 
-  a = 2;
-  b = 7;
-  a = a + 1;
-  result = a + b;
+    a = 2;
+    b = 7;
+    a = a + 1;
+    result = a + b;
   
 Considering the fact that we've only used two small integer values, the previous example is pretty trivial. However, your computer can store millions of numbers like these at the same time and conduct sophisticated mathematical operations with them.
 
