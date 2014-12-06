@@ -23,6 +23,55 @@ Each variable needs a unique name that identifies it and distinguishes it from t
 An identifier is any sequence of one or more characters including the underscore (_) excluding symbols, punctuation marks, and spaces. This identifier however can't be the same as the predefined keywords
 of C++ that indicate operations.  It's also important to note that C++ is case sensitive, so the indentifier "ITERATOR" wouldn't be the same as "iterator", for example. 
 
+##Declaring Variables
+
+Before we use any variables, we must declare it and its type before we can use it. This informs the compiler the size to reserve in memory for the variable and how to interpret its value. The syntax to declare a new variable in C++ is straightforward: we simply write the type followed by the variable name (i.e., its identifier). For example:
+
+        int a;
+        float thenumber;
+
+These are two valid declarations of variables. The first one declares a variable of type int with the identifier a. The second one declares a variable of type float with the identifier thenumber. Once declared, the variables a and thenumber can be used within the rest of their scope in the program.
+
+If we want to declare one or more variables of the same type, they can all be declared in a single statement by separating their identifiers with commas. For example:
+
+        int a, b, c;
+
+In this example, we have declared three variables of type int with the identifier a, b and c. This is the equivalent to the following code:
+
+        int a;
+        int b;
+        int c;
+
+##Initializing Variables
+
+After variables are declared, they have an undetermined value until they are assigned a value for the first time. Initialization is when we give the variable a specific value.
+
+In C++, there are three ways to initialize variables. They are all equivalent and are reminiscent of the evolution of the language over the years:
+
+The first one, known as c-like initialization (because it is inherited from the C language), consists of appending an equal sign followed by the value to which the variable is initialized:
+
+**type identifier = initial_value;**
+
+For example, to declare a variable of type int called x and initialize it to a value of zero from the same moment it is declared, we can write:
+
+        int a = 5;
+
+The second way, which is known as constructor initialization (introduced by the C++ language), encloses the initial value between parentheses (()):
+
+type identifier (initial_value); 
+For example:
+
+        int a (5);
+
+The third way, which is known as uniform initialization, uses a similar method to the previous example, but it uses curly braces ({}) instead of parentheses (this was introduced by the revision of the C++ standard, in 2011):
+
+type identifier {initial_value}; 
+For example:
+
+        int a {5};
+
+
+
 ##Intro to Ints
 
 First a brief note on declaration, to declare a variable you use the syntax datatype indentifier, so if we wanted to declare an integer named Number we'd write:  
