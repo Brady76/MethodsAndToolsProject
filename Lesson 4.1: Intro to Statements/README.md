@@ -49,8 +49,8 @@ you think is necessary, just some manipulation of your iterator, but if you mani
 
 An example:
 
-for(iterator = 5; iterator >= 0; iterator--){
-	cout << Iterator << endl;
+for(int iterator = 5; iterator >= 0; iterator--){
+	cout << iterator << endl;
 }
 
 The above example would print:
@@ -60,6 +60,24 @@ The above example would print:
 2
 1
 0
+
+There might be cases where we want to include more on the for loop line, like what if we want two conditions, or what if we want three iterators, several different increments?
+We can use commas while we're inside the parentheses to include extra parts to each section (sections divided by the semicolons) An example:
+
+int main(){
+for(int iterator1 = 3,iterator2 = 5; iterator1 >=0, iterator2 >=1; iterator1--,iterator2--){
+	cout << iterator1 << " " << iterator2 << endl;
+}
+}
+
+The above example would print:
+3 5
+2 4
+1 3
+0 2
+-1 1
+
+Notice that iterator1 actually goes below 0 due to our second condition in our last print statement. 
 
 While Loop's are similar to For Loop's but are much simpler, the syntax is:
 while(condition) statement
