@@ -58,53 +58,67 @@ For example, to declare a variable of type int called x and initialize it to a v
 
 The second way, which is known as constructor initialization (introduced by the C++ language), encloses the initial value between parentheses (()):
 
-type identifier (initial_value); 
+**type identifier (initial_value); **
+
 For example:
 
         int a (5);
 
 The third way, which is known as uniform initialization, uses a similar method to the previous example, but it uses curly braces ({}) instead of parentheses (this was introduced by the revision of the C++ standard, in 2011):
 
-type identifier {initial_value}; 
+**type identifier {initial_value};** 
+
 For example:
 
         int a {5};
 
-
+Any of these ways are valid ways to declare variables, but it is good practice to write code that is consistent. If you choose to use constructor initialization to declare one variable, make sure you use that method to declare all your variables for your whole program. This improves readability and helps you develop much cleaner code.
 
 ##Intro to Ints
 
-First a brief note on declaration, to declare a variable you use the syntax datatype indentifier, so if we wanted to declare an integer named Number we'd write:  
-Int Number;
+An integer type variable is a variable that can only hold whole numbers (eg. -2, -1, 0, 1, 2). C++ actually has four different integer variables available for use: **char, short, int, and long**. The only difference between these different integer types is that they have varying sizes — the larger integers can hold bigger numbers. For the sake of this tutorial, we will only be focusing on **int**.
 
-Now we have a variable of integer type, next we'd want to initialize it to hold some sort of value, so we could write:
-Number = 0;
+In order to explain integers, we will declare and initialize the int, number.
 
-Then our variable would hold the number 0.  Integer's are for whole numbers, if you were to try:
-Number = 5.5;	it would automatically be rounded down to 5
-Number = "String";	you would get this message "error: invalid conversion from ‘const char*’ to ‘int’ [-fpermissive]"
-Number = true;	Number would be set to be equal to 1, if it was false it would be equal to 0, these are numerical values that are known to represent true or false.
+        int Number;
+        int Number =5;
+
+Integers will pass in whole numbers. If you were to try to initialize the following values, you will get the following inputs:
+
+1. Passing in decimals or non wole numbers: This will round your number down to the nearest whole number.
+        int Number;
+        int Number = 5.5; //Only accepts whole numbers, so it will round down and return 5
+
+2. Passing in incorrect data types: you would get this message "error: invalid conversion from ‘const char*’ to ‘int’ [-fpermissive]"
+        int Number;
+        Number = "String";
+
+3. Passing in true/false: Your number would be set to be equal to 1, if it was false it would be equal to 0, these are numerical values that represent true or false.
+        int Number;
+        Number = true;	
 
 ##Intro to Floats
 
 To declare these variables we use the type name "float", for example:
-float Number = 5.5;	Notice something we did here, you can both declare and initialize a variable on the same line. This goes for all data types.
+        float Number = 5.5;	
+Notice something we did here, you can both declare and initialize a variable on the same line. This goes for all data types.
 
 Use floats for numbers with decimals since integers only hold whole numbers.
 
 ## Intro to Strings
 
 If we don't have any mathematical intentions for a data type and we just want a message, you might find it useful to use the data type string!
-It's used just like every other data type we've worked with so far, but the message or value assigned to it must be within a pair of quotation marks, strings can hold all characters. An example:
-string mystring = "hello"
+It's used just like every other data type we've worked with so far, but the message or value assigned to it must be within a pair of quotation marks, strings can hold all characters. 
+An example:
+        string mystring = "hello"
 
 ## Intro to Booleans
 
 Booleans are an interesting data type, in C++ they're simply referred to as bools, and the variable name is just "bool".  They're made to hold either "true" or "false". Often they're used to work
 conditional "if" statements and the like, which we'll get to later, but for now just know that the declaration of a boolean looks like:
-bool myboolean = true;
+        bool myboolean = true;
 or
-bool myboolean = false;
+        bool myboolean = false;
 
 ## Assignment #2
 
