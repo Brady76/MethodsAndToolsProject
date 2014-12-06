@@ -86,21 +86,29 @@ In order to explain integers, we will declare and initialize the int, number.
 Integers will pass in whole numbers. If you were to try to initialize the following values, you will get the following inputs:
 
 1. Passing in decimals or non wole numbers: This will round your number down to the nearest whole number.
+
+
         int Number;
         int Number = 5.5; //Only accepts whole numbers, so it will round down and return 5
 
 2. Passing in incorrect data types: you would get this message "error: invalid conversion from ‘const char*’ to ‘int’ [-fpermissive]"
+
+
         int Number;
         Number = "String";
 
 3. Passing in true/false: Your number would be set to be equal to 1, if it was false it would be equal to 0, these are numerical values that represent true or false.
+
+
         int Number;
         Number = true;	
 
 ##Intro to Floats
 
 To declare these variables we use the type name "float", for example:
+   
         float Number = 5.5;	
+
 Notice something we did here, you can both declare and initialize a variable on the same line. This goes for all data types.
 
 Use floats for numbers with decimals since integers only hold whole numbers.
@@ -110,14 +118,17 @@ Use floats for numbers with decimals since integers only hold whole numbers.
 If we don't have any mathematical intentions for a data type and we just want a message, you might find it useful to use the data type string!
 It's used just like every other data type we've worked with so far, but the message or value assigned to it must be within a pair of quotation marks, strings can hold all characters. 
 An example:
+
         string mystring = "hello"
 
 ## Intro to Booleans
 
 Booleans are an interesting data type, in C++ they're simply referred to as bools, and the variable name is just "bool".  They're made to hold either "true" or "false". Often they're used to work
 conditional "if" statements and the like, which we'll get to later, but for now just know that the declaration of a boolean looks like:
+
         bool myboolean = true;
 or
+
         bool myboolean = false;
 
 ## Assignment #2
