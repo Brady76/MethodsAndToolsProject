@@ -105,3 +105,4 @@ We have the line return(x * factorial(x-1)), in this case, x is 5 so it reads:
 5 * 4 * 3 * 2 * factorial(1), and so when we get to 1 we hit our base case, where we're told to just return 1 instead of going any deeper down the rabbit hole recursively!
 So we get our final answer, which is 120!
 		
+	
