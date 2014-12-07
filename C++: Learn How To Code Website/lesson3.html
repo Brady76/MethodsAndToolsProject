@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>C++ Tutorials!: Learn How to Code Lesson 3</title>
+<link rel="stylesheet" type="text/css" href="lesson3.css">
+</head>
+<body>
+<div id="container"> </div>
+<div id="title"> Lesson 3: Operators and Arithmetic</div>
+<div id="sidebar">
+	<nav>
+		<ul> 	
+			<li><a href="homepage.html">Homepage</a></li> 
+			<li><a href = "lesson1.html"> Lesson 1: Structure of a Program </a> </li>
+			<li><a href = "lesson2.html"> Lesson 2: Variables and Types </a> </li>
+			<li><a href = "lesson41.html"> Lesson 4.1: Intro to Statements </a> </li>
+			<li><a href = "lesson42.html"> Lesson 4.2: Functions </a> </li>
+		</ul>
+	</nav>
+</div>
+<div id = "intro">
+	<p>
+		Now we're going to start really digging into the interesting stuff with your coding assignments.  In this chapter we're going to learn about operators in C++ and how we use them (namely to implement arithmetic)
+	</p>
+</div>
+
+<div id="content"> 
+	<h1>Arithmetic Operators</h1>
+	<p>
+		Just briefly I wanted to bring up the "=" operator, in C++ it's called the 'Assignment Operator', we used it before when we wanted to assign values to our variables, like x = 5.  Anyways...
+		Your arithmetic operators are: 
+	<pre>
+		+	addition		
+		-	subtraction
+		*	multiplication
+		/	division
+		%	modulo, modulo is similar to division except it gives you the remainder (e.g. 11 % 3 will return 2, since 11/3 gives a remainder of 2
+	</pre>
+	<h1>
+		Compound Assignment Operators
+	</h1>
+	<p>
+		These operators are shortcuts of sort, they're used when you have an existing variable that you'd like to perform an operation on.  The ones for arithmetic are:  
+	</p>
+	<pre>
+		+=	addition
+		-=	subtraction
+		*=	multiplication
+		/=	division
+		%=	modulo
+	</pre>
+	<p>
+		Say you have a variable x, x holds the value 5 and we want to add 5 more to it so x holds 10, you could write this like:
+	</p>
+	<pre>
+		x = x + 5
+		x += 5
+	</pre>
+	<p>
+		Both of these would be valid and would end with x being set equal to 10, the same concept applies to the rest of the compound assignment operators
+	</p>
+	<h1>
+		Increment and Decrement Operators
+	</h1>
+	<p>
+		These operators are typically used in loops (control structures that you'll be learning about soon!), they're useful when we want to add or subtract 1 from an already exisiting variable. They are:
+	</p>
+	<pre>
+		++	Increment
+		--	Decrement
+	</pre>
+	<p>
+		So for example:
+	</p>
+	<pre>
+		x++
+		x += 1
+		x = x + 1
+	</pre>
+	<p>
+		<b>
+			Would all do the same thing!
+		</b>
+	</p>
+	<p>
+		One important thing to note is using the increment/decrement operator as a suffix versus using it as a prefix  
+		If the operator is used as a prefix, the value is incremented/decremented and then evaluated, if the operator is used as a suffix, the value is evaluated and then incremented/decremented
+		For example:
+	</p>
+	<pre>
+		x = 0
+		y = ++x
+		x would hold 0, y would hold 1
+	</pre>
+	<pre>
+		x = 0
+		y = x++
+		x would hold 0, y would also hold 0
+	</pre>
+	<h1>
+		Comparison Operators
+	</h1>
+	<p>
+		These are operators we use to determine if values are greater than, less than, or equal to other values.  The result of these operators is a "true or false" (or boolean) output.
+		These operators are:
+	</p>
+	<pre>
+		==	Equal to
+		!=	Not equal to
+		<	Less than
+		>	Greater than
+		<=	Less than or equal to
+		>=	Greater than or equal to
+	</pre>
+	<p>
+		This is important later when we learn to use conditional statements, but some examples are:  
+	</p>
+	<pre>
+		1 == 1	returns true
+		2 <=1	returns false
+		3 != 5	returns true
+	</pre>
+	<h1>
+		Logical Operators
+	</h1>
+	<p>
+		This is also something that's more important when we're using conditional statements, but these are operators that work with boolean values 
+	</p>
+	<pre>
+		!	Not, this flips the true/false outcome of a statement, for example, !(5 <= 6) would return false, 5 is less than 6, but the not flips the evaluation of true to be false
+	</pre>
+	<pre>
+		&&	And, Say we have two expressions, (a <= b) && (b == 5), with the && operator both of these conditions would have to be true for the whole expression to evaluate to true, otherwise it results in false
+	</pre>
+	<pre>
+		||	Or, Take (a <= b) and (b==5) again, but now it's (a<=b) || (b==5), now only one of those expressions needs to be true for the whole expression to evaluate to true, it's only false when both are false
+	</pre>
+	<h1>
+		Type Casting
+	</h1>
+	<p>
+		Type casting is a feature of C++ that allows you to convert a value from one data type to another, it looks like this:
+	</p>
+	<pre>
+		float z;
+		int x = 5;
+		z = (float) x;
+		In this case, the int 5 is converted into the float 5
+	</pre>
+	<h1>
+		String Arithmetic
+	</h1>
+	<p>
+		You can combine strings together using the "+" operator. It looks like this:
+	</p>
+	<pre>
+		string x = "hello";
+		x += "hi";
+	</pre>
+	<p>
+		At this point, x would contain "hellohi"
+	</p>
+</div>
+
+
+<div id ="assignment">
+	<h1> Assignment # 3: Operators and Arithmetic </h1>
+	<p>
+		 We have a coding assignment for you to work on, follow the instructions in the comments above each function and run it when you're done to see if you passed.
+	</p>
+	
+	<a href = "L3Assignment.cpp" download> L3Assignment.cpp</a>
+	 
+	<p>	 
+		 Good Luck!
+	</p>
+	<button onclick="location.href='lesson41.html'"> Lesson 4.1: Intro to Statements</button>
+</div> 
+<div id="footer"> CSCI 3308 Software Methods and Tools Project Brady Auen, Deep Desai, Kevin Vo </div>
+</body>
+</html>
