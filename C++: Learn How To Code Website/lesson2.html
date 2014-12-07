@@ -56,35 +56,190 @@
 		code the variable names were a, b, and result, but we could have called the variables any names we could have come up with, 
 		as long as they were valid C++ identifiers.
 	</p>
+	<h1>
+		Identifiers
+	</h1>
+	<p>
+		An identifier is any sequence of one or more characters including the underscore (_) excluding symbols, punctuation marks, 
+		and spaces. This identifier however can't be the same as the predefined keywords of C++ that indicate operations.  It's 
+		also important to note that C++ is case sensitive, so the indentifier "ITERATOR" wouldn't be the same as "iterator", 
+		for example. 
+	</p>
+	<h1>
+		Declaring Variables
+	</h1>
+	<p>
+		Before we use any variables, we must declare it and its type before we can use it. This informs the compiler the size to 
+		reserve in memory for the variable and how to interpret its value. The syntax to declare a new variable in C++ is 
+		straightforward: we simply write the type followed by the variable name (i.e., its identifier). For example:
+	</p>
+	<pre>
+		int a;
+		float thenumber;
+	</pre>
 	
-
-
-
-
-
+	<p>
+		These are two valid declarations of variables. The first one declares a variable of type int with the identifier a. The second one declares a variable of type float with the identifier thenumber. Once declared, the variables a and thenumber can be used within the rest of their scope in the program.
+	</p>
+	<p>
+		If we want to declare one or more variables of the same type, they can all be declared in a single statement by separating their identifiers with commas. For example:
+	</p>
+	<pre>
+		int a, b, c;
+	</pre>
+	<p>
+		In this example, we have declared three variables of type int with the identifier a, b and c. This is the equivalent to the following code:
+	</p>
+	<pre>
+		int a;
+		int b;
+		int c;
+	</pre>
+	<h1>
+		Initializing Variables
+	</h1>
+	<p>
+		After variables are declared, they have an undetermined value until they are assigned a value for the first time. Initialization is when we give the variable a specific value.
+	</p>
+	<p>
+		In C++, there are three ways to initialize variables. They are all equivalent and are reminiscent of the evolution of the language over the years:
+	</p>
+	<p>
+		The first one, known as c-like initialization (because it is inherited from the C language), consists of appending an equal sign followed by the value to which the variable is initialized:
+	</p>
+	<p>
+	<b>
+		type identifier = initial_value;
+	</b>
+	</p>
+	<p>
+		For example, to declare a variable of type int called x and initialize it to a value of zero from the same moment it is declared, we can write:
+	</p>
+	<pre>
+		int a = 5;
+	</pre>
+	<p>
+		The second way, which is known as constructor initialization (introduced by the C++ language), encloses the initial value between parentheses (()):
+	</p>
+	<p>
+	<b> type identifier (initial value);</b>
+	</p>
+	<p>
+		For Example:
+	</p>
+	<pre>
+		int a (5);
+	</pre>
+	<p>
+		The third way, which is known as uniform initialization, uses a similar method to the previous example, but it uses curly braces ({}) instead of parentheses (this was introduced by the revision of the C++ standard, in 2011):
+	</p>
+	<p>
+		<b>
+		type identifier {initial_value};
+		</b>
+	</p>
+	<p>
+		For example:
+	</p>
+	<pre>
+		int a {5};
+	</pre>
+	<p>
+		Any of these ways are valid ways to declare variables, but it is good practice to write code that is consistent. If you choose to use constructor initialization to declare one variable, make sure you use that method to declare all your variables for your whole program. This improves readability and helps you develop much cleaner code.
+	</p>
+	<h1>
+		Intro to Ints
+	</h1>
+	<p>
+		An integer type variable is a variable that can only hold whole numbers (eg. -2, -1, 0, 1, 2). 
+		C++ actually has four different integer variables available for use: <b>char, short, int, and long</b>. 
+		The only difference between these different integer types is that they have varying sizes — the larger integers 
+		can hold bigger numbers. For the sake of this tutorial, we will only be focusing on <b>int</b>.
+	</p>
+	<p>
+		In order to explain integers, we will declare and initialize the int, number.
+	</p>
+	<pre>
+		int Number;
+		int Number =5;
+	</pre>
+	<p>
+		Integers will pass in whole numbers. If you were to try to initialize the following values, you will get the following inputs:
+	</p>
+	<p>
+		1. Passing in decimals or non wole numbers: This will round your number down to the nearest whole number.
+	</p>
+	<pre>
+        int Number;
+        int Number = 5.5; //Only accepts whole numbers, so it will round down and return 5
+	</pre>
+	<p>
+		2. Passing in incorrect data types: you would get this message "error: invalid conversion from ‘const char*’ to ‘int’ [-fpermissive]"
+	</p>
+	<pre>
+        int Number;
+        Number = "String";
+	</pre>
+	<p>
+		3. Passing in true/false: Your number would be set to be equal to 1, if it was false it would be equal to 0, these are numerical values that represent true or false.
+	</p>
+	<pre>
+        int Number;
+        Number = true;
+	</pre>
+	<h1>
+		Intro to Floats
+	</h1>
+	<p>
+		To declare these variables we use the type name "float", for example:
+	</p>
+	<pre>
+		float Number = 5.5;	
+	</pre>
+	<p>
+		Notice something we did here, you can both declare and initialize a variable on the same line. This goes for all data types.	
+	</p>
+	<p>
+		Use floats for numbers with decimals since integers only hold whole numbers.
+	</p>
+	<h1>
+		Intro to Strings
+	</h1>
+	<p>
+		If we don't have any mathematical intentions for a data type and we just want a message, you might find it useful to use the data type string!
+		It's used just like every other data type we've worked with so far, but the message or value assigned to it must be within a pair of quotation marks, strings can hold all characters. 
+		An example:
+	</p>
+	<pre>
+        string mystring = "hello"
+	</pre>
+	<h1>
+		Intro to Booleans
+	</h1>
+	<p>
+		Booleans are an interesting data type, in C++ they're simply referred to as bools, and the variable name is just "bool".  They're made to hold either "true" or "false". Often they're used to work
+		conditional "if" statements and the like, which we'll get to later, but for now just know that the declaration of a boolean looks like:
+	</p>
+	<pre>
+        bool myboolean = true;
+	</pre>
+	<p> or </p>
+	<pre>
+        bool myboolean = false;	
+	</pre>
+</div>
 
 
 <div id ="assignment">
-	<h1> Assignment # 1: Hello World </h1>
+	<h1> Assignment # 2: Variables and Types Quiz </h1>
 	<p>
-		For our first practice assignment, we will implement our own version of our "Hello World" program. Open the <b>HelloWorld.cpp</b>
-		file and edit/implement your code there. 
+		 For this assignment we've made an HTML quiz for you...
 	</p>
 	<p>
-		In order to pass the test file, your code must include a function <b>int main()</b> that:
-	</p>
-	<p>
-	1. Prints <b>Hello World</b>
-	</p>
-	<p>
-		2. Prints <b>This is my first C++ program.</b>
-	</p>
-	<p>
-		Remember that C++ is a case sensitive language and that spelling matters, so be sure to double check your work before running the test file.
-	</p>
-	<a href = "HelloWorld.cpp" download> HelloWorld.cpp</a>
-	<p>
-		Good Luck!
+		 [COMPLETE LATER ONCE HTML IMPLEMENTATION IS FINISHED]
+	</p>	 
+	<p>	 
+		 Good Luck!
 	</p>
 	
 </div> 
