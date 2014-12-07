@@ -1,22 +1,54 @@
-Lesson 3: Operators and Arithmetic
-==========
+#Lesson 3: Operators and Arithmetic
 
-Now we're going to start really digging into the interesting stuff with your coding assignments.  In this chapter we're going to learn about operators in C++ and how we use them (namely to implement
-arithmetic)
 
-Arithmetic Operators
-----------
+Now we're going to start really digging into the interesting stuff with your coding assignments.  In this chapter we're going to learn about operators in C++ and how we use them. We will primarily be dealing with simple arithmetic functions.
 
-Just briefly I wanted to bring up the "=" operator, in C++ it's called the 'Assignment Operator', we used it before when we wanted to assign values to our variables, like x = 5.  Anyways...
+## Assignment Operator
+
+The assignment operator assigns a value to a variable. For example,
+
+    x=5;
+
+This statement assigns the integer value 5 to the variable x. The assignment operation always takes place from right to left, and never the other way around.
+
+An important thing to keep in mind is that we are only assigning the value of y to x at the moment of the assignment operation. Therefore, if y changes at a later moment, it will not affect the new value taken by x. Let's go over a quick example to show how assignment operators work.
+
+    // assignment operator
+    #include <iostream>
+    using namespace std;
+    
+    int main ()
+    {
+      int x, y;         // x:?,  y:?
+      x = 9;            // x:9, y:?
+      b = 4;            // x:9, y:5
+      a = b;            // x:5, y:5
+      b = 7;            // x:5, y:7
+    
+      cout << "x:";
+      cout << x;
+      cout << " y:";
+      cout << y;
+      // will print out "x:5, y:7"
+    }
+
+This program prints on screen the final values of x and y (5 and 7, respectively). Notice how x was not affected by the final modification of x, even though we previously declared x = y.
+
+
+
+
+##Arithmetic Operators
+
 Your arithmetic operators are:  
-+	addition		
--	subtraction
-*	multiplication
-/	division
-%	modulo, modulo is similar to division except it gives you the remainder (e.g. 11 % 3 will return 2, since 11/3 gives a remainder of 2
+-+	addition		
+--	subtraction
+-*	multiplication
+-/	division
+-%	modulo, modulo is similar to division except it gives you the remainder (e.g. 11 % 3 will return 2, since 11/3 gives a remainder of 2
 
-Compound Assignment Operators
-----------
+
+##Compound Assignment Operators
+
 
 These operators are shortcuts of sort, they're used when you have an existing variable that you'd like to perform an operation on.  The ones for arithmetic are:  
 +=	addition
