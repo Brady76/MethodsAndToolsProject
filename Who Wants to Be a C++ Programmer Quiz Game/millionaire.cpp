@@ -5,7 +5,7 @@
 using namespace std;
 
 void question15(){
-	int answer, final_answer; 
+	int answer, final_answer, play_again; 
 	
 	cout<<"\n\n";
 	cout<<"\t ------------------------------------------------------------\n";
@@ -29,13 +29,25 @@ void question15(){
 	if (final_answer == 4)
 	{
 		if (answer == 4)
-			{ 
-				cout<< "That is the correct answer!" << endl; 
-				cout<< "Congradulations! You have have won Who Wants to be a C++ Programmer!";
-				exit(EXIT_SUCCESS);
-			}
+		{ 
+			cout<< "That is the correct answer!" << endl; 
+			cout<< "Congradulations! You have have won Who Wants to be a C++ Programmer!";
+			exit(EXIT_SUCCESS);
+		}
 		else
-			{ cout<< "Sorry that is incorrect";}
+		{ 
+			cout<< "Sorry that is incorrect" << endl;
+			cout<< "Would you like to keep playing? Press '1' for yes, '2' for no: ";
+			cin >> play_again;
+			if (play_again == 1)
+			{
+				question15();
+			}
+			else 
+			{
+				cout << "Thank you for playing!";
+			}
+		}	
 	}
 	else
 	{
@@ -46,7 +58,7 @@ void question15(){
 
 
 void question14(){
-	int answer, final_answer; 
+	int answer, final_answer, play_again; 
 	
 	cout<<"\n\n";
 	cout<<"\t ------------------------------------------------------------\n";
@@ -70,13 +82,25 @@ void question14(){
 	if (final_answer == 1)
 	{
 		if (answer == 1)
-			{ 
-				cout<< "That is the correct answer! You have won $500,000!" << endl;
-				cout<< "Let's move on to question 15!";
-				question15();
-			}
+		{ 
+			cout<< "That is the correct answer! You have won $500,000!" << endl;
+			cout<< "Let's move on to question 15!";
+			question15();
+		}
 		else
-			{ cout<< "Sorry that is incorrect";}
+		{ 
+			cout<< "Sorry that is incorrect" << endl;
+			cout<< "Would you like to keep playing? Press '1' for yes, '2' for no: ";
+			cin >> play_again;
+			if (play_again == 1)
+			{
+				question14();
+			}
+			else 
+			{
+				cout << "Thank you for playing!";
+			}
+		}	
 	}
 	else
 	{
@@ -86,7 +110,7 @@ void question14(){
 }
 
 void question13(){
-	int answer, final_answer; 
+	int answer, final_answer, play_again; 
 	
 	cout<<"\n\n";
 	cout<<"\t ------------------------------------------------------------\n";
@@ -110,13 +134,25 @@ void question13(){
 	if (final_answer == 3)
 	{
 		if (answer == 3)
-			{ 
-				cout<< "That is the correct answer! You have won $125,000!" << endl;
-				cout<< "Let's move on to question 14!";
-				question14();
-			}
+		{ 
+			cout<< "That is the correct answer! You have won $125,000!" << endl;
+			cout<< "Let's move on to question 14!";
+			question14();
+		}
 		else
-			{ cout<< "Sorry that is incorrect";}
+		{ 
+			cout<< "Sorry that is incorrect" << endl;
+			cout<< "Would you like to keep playing? Press '1' for yes, '2' for no: ";
+			cin >> play_again;
+			if (play_again == 1)
+			{
+				question13();
+			}
+			else 
+			{
+				cout << "Thank you for playing!";
+			}
+		}	
 	}
 	else
 	{
@@ -127,7 +163,7 @@ void question13(){
 
 
 void question12(){
-	int answer, final_answer; 
+	int answer, final_answer, play_again; 
 	
 	cout<<"\n\n";
 	cout<<"\t ------------------------------------------------------------\n";
@@ -151,13 +187,25 @@ void question12(){
 	if (final_answer == 2)
 	{
 		if (answer == 2)
-			{ 
-				cout<< "That is the correct answer! You have won $125,000!" << endl;
-				cout<< "Let's move on to question 13!";
-				question13();
-			}
+		{ 
+			cout<< "That is the correct answer! You have won $125,000!" << endl;
+			cout<< "Let's move on to question 13!";
+			question13();
+		}
 		else
-			{ cout<< "Sorry that is incorrect";}
+		{ 
+			cout<< "Sorry that is incorrect" << endl;
+			cout<< "Would you like to keep playing? Press '1' for yes, '2' for no: ";
+			cin >> play_again;
+			if (play_again == 1)
+			{
+				question12();
+			}
+			else 
+			{
+				cout << "Thank you for playing!";
+			}
+		}	
 	}
 	else
 	{
@@ -167,7 +215,7 @@ void question12(){
 }
 
 void question11(){
-	int answer, final_answer; 
+	int answer, final_answer, play_again; 
 	
 	cout<<"\n\n";
 	cout<<"\t ------------------------------------------------------------\n";
@@ -191,12 +239,24 @@ void question11(){
 	if (final_answer == 1)
 	{
 		if (answer == 1)
-			{ 
-				cout<< "That is the correct answer! You have won $64,000!";
-				question12();
-			}
+		{ 
+			cout<< "That is the correct answer! You have won $64,000!";
+			question12();
+		}
 		else
-			{ cout<< "Sorry that is incorrect";}
+		{ 
+			cout<< "Sorry that is incorrect" << endl;
+			cout<< "Would you like to keep playing? Press '1' for yes, '2' for no: ";
+			cin >> play_again;
+			if (play_again == 1)
+			{
+				question11();
+			}
+			else 
+			{
+				cout << "Thank you for playing!";
+			}
+		}	
 	}
 	else
 	{
@@ -207,7 +267,7 @@ void question11(){
 
 
 void question10(){
-	int answer, final_answer; 
+	int answer, final_answer, play_again; 
 	
 	cout<<"\n\n";
 	cout<<"\t ------------------------------------------------------------\n";
@@ -231,14 +291,26 @@ void question10(){
 	if (final_answer == 4)
 	{
 		if (answer == 4)
-			{ 
-				cout<< "That is the correct answer! You have won $25,000!";
-				cout<< "Let's move on to question 2!" << endl;
-				question11();
-			}
+		{ 
+			cout<< "That is the correct answer! You have won $25,000!";
+			cout<< "Let's move on to question 2!" << endl;
+			question11();
+		}
 		else
-			{ cout<< "Sorry that is incorrect";}
-	}
+		{ 
+			cout<< "Sorry that is incorrect" << endl;
+			cout<< "Would you like to keep playing? Press '1' for yes, '2' for no: ";
+			cin >> play_again;
+			if (play_again == 1)
+			{
+				question10();
+			}
+			else 
+			{
+				cout << "Thank you for playing!";
+			}
+		}	
+	}	
 	else
 	{
 		cout<< "Please enter another answer";
@@ -247,7 +319,7 @@ void question10(){
 }
 
 void question9(){
-	int answer, final_answer; 
+	int answer, final_answer, play_again; 
 	
 	cout<<"\n\n";
 	cout<<"\t ------------------------------------------------------------\n";
@@ -271,13 +343,25 @@ void question9(){
 	if (final_answer == 3)
 	{
 		if (answer == 3)
-			{ 
-				cout<< "That is the correct answer! You have won $25,000!" << endl;
-				cout<< "Let's move on to question 10!";
-				question10();
-			}
+		{ 
+			cout<< "That is the correct answer! You have won $25,000!" << endl;
+			cout<< "Let's move on to question 10!";
+			question10();
+		}
 		else
-			{ cout<< "Sorry that is incorrect";}
+		{ 
+			cout<< "Sorry that is incorrect" << endl;
+			cout<< "Would you like to keep playing? Press '1' for yes, '2' for no: ";
+			cin >> play_again;
+			if (play_again == 1)
+			{
+				question9();
+			}
+			else 
+			{
+				cout << "Thank you for playing!";
+			}
+		}	
 	}
 	else
 	{
@@ -288,7 +372,7 @@ void question9(){
 
 
 void question8(){
-	int answer, final_answer; 
+	int answer, final_answer, play_again; 
 	
 	cout<<"\n\n";
 	cout<<"\t ------------------------------------------------------------\n";
@@ -318,7 +402,19 @@ void question8(){
 				question9();
 			}
 		else
-			{ cout<< "Sorry that is incorrect";}
+		{ 
+			cout<< "Sorry that is incorrect" << endl;
+			cout<< "Would you like to keep playing? Press '1' for yes, '2' for no: ";
+			cin >> play_again;
+			if (play_again == 1)
+			{
+				question8();
+			}
+			else 
+			{
+				cout << "Thank you for playing!";
+			}
+		}	
 	}
 	else
 	{
@@ -359,19 +455,19 @@ void question7(){
 				question8();
 			}
 		else
-			{ 
-				cout<< "Sorry that is incorrect" << endl;
-				cout<< "Would you like to keep playing? Press '1' for yes, '2' for no" ;
-				cin >> play_again;
-				if (play_again == 1)
-					{
-						question7();
-					}
-				else 
-					{
-						cout << "Thank you for playing!";
-					}
+		{ 
+			cout<< "Sorry that is incorrect" << endl;
+			cout<< "Would you like to keep playing? Press '1' for yes, '2' for no: ";
+			cin >> play_again;
+			if (play_again == 1)
+			{
+				question7();
 			}
+			else 
+			{
+				cout << "Thank you for playing!";
+			}
+		}
 	}
 	else
 	{
@@ -381,7 +477,7 @@ void question7(){
 }
 
 void question6(){
-	int answer, final_answer; 
+	int answer, final_answer, play_again; 
 	
 	cout<<"\n\n";
 	cout<<"\t ------------------------------------------------------------\n";
@@ -405,13 +501,26 @@ void question6(){
 	if (final_answer == 4)
 	{
 		if (answer == 4)
-			{ 
-				cout<< "That is the correct answer! You have won $10,000!" << endl;
-				cout<< "Let's move on to question 7!";
-				question7();
-			}
+		{ 
+			cout<< "That is the correct answer! You have won $10,000!" << endl;
+			cout<< "Let's move on to question 7!";
+			question7();
+		}
 		else
-			{ cout<< "Sorry that is incorrect";}
+		{ 
+			cout<< "Sorry that is incorrect" << endl;
+			cout<< "Would you like to keep playing? Press '1' for yes, '2' for no: ";
+			cin >> play_again;
+			if (play_again == 1)
+			{
+				question6();
+			}
+			else 
+			{
+				cout << "Thank you for playing!";
+			}
+		}
+
 	}
 	else
 	{
@@ -445,17 +554,16 @@ void question5(){
 	if (final_answer == 1)
 	{
 		if (answer == 1)
-			{ 
-				cout<< "That is the correct answer! You have won $7,500!";
-				cout<< "Let's move on to question 2!";
-				question6();
-			}
+		{ 
+			cout<< "That is the correct answer! You have won $7,500!";
+			cout<< "Let's move on to question 2!";
+			question6();
+		}
 		else
 		{ 
 			cout<< "Sorry that is incorrect" << endl;
 			cout<< "Would you like to keep playing? Press '1' for yes, '2' for no: ";
 			cin >> play_again;
-			
 			if (play_again == 1)
 			{
 				question5();
@@ -466,7 +574,6 @@ void question5(){
 			}
 		}
 	}
-	
 	else
 	{
 		cout<< "Please enter another answer";
@@ -499,31 +606,23 @@ void question4(){
 	if (final_answer == 2)
 	{
 		if (answer == 2)
-			{ 
-				cout<< "That is the correct answer! You have won $5000!" << endl;
-				cout<< "Let's move on to question 5!";
-				question5();
-			}
-	{
-		if (answer == 3)
-			{ 
-				cout<< "That is the correct answer! You have won $3000!" << endl;
-				cout<< "Let's move on to question 4!";
+		{ 
+			cout<< "That is the correct answer! You have won $5000!" << endl;
+			cout<< "Let's move on to question 5!";
+			question5();
+		}
+		else
+		{ 
+			cout<< "Sorry that is incorrect" << endl;
+			cout<< "Would you like to keep playing? Press '1' for yes, '2' for no: ";
+			cin >> play_again;
+			if (play_again == 1)
+			{
 				question4();
 			}
-		else
-			{ 
-				cout<< "Sorry that is incorrect" << endl;
-				cout<< "Would you like to keep playing? Press '1' for yes, '2' for no: ";
-				cin >> play_again;
-				if (play_again == 1)
-					{
-						question4();
-					}
-				else 
-					{
-						cout << "Thank you for playing!";
-					}
+			else 
+			{
+				cout << "Thank you for playing!";
 			}
 		}
 	}
@@ -565,19 +664,19 @@ void question3(){
 				question4();
 			}
 		else
-			{ 
-				cout<< "Sorry that is incorrect" << endl;
-				cout<< "Would you like to keep playing? Press '1' for yes, '2' for no: " ;
-				cin >> play_again;
-				if (play_again == 1)
-					{
-						question3();
-					}
-				else 
-					{
-						cout << "Thank you for playing!";
-					}
+		{ 
+			cout<< "Sorry that is incorrect" << endl;
+			cout<< "Would you like to keep playing? Press '1' for yes, '2' for no: " ;
+			cin >> play_again;
+			if (play_again == 1)
+			{
+				question3();
 			}
+			else 
+			{
+				cout << "Thank you for playing!";
+			}
+		}
 	}
 	else
 	{
@@ -627,8 +726,7 @@ void question2(){
 			if (play_again == 1)
 			{
 				question2();
-			}
-			
+			}		
 			else 
 			{
 				cout << "Thank you for playing!";
@@ -685,7 +783,6 @@ void question1(){
 			{
 				question1();
 			}
-			
 			else 
 			{
 				cout << "Thank you for playing!";
