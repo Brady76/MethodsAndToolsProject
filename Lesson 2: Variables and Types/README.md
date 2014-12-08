@@ -74,7 +74,7 @@ For example:
 
 Any of these ways are valid ways to declare variables, but it is good practice to write code that is consistent. If you choose to use constructor initialization to declare one variable, make sure you use that method to declare all your variables for your whole program. This improves readability and helps you develop much cleaner code.
 
-##Intro to Ints
+##Intro to Integers
 
 An integer type variable is a variable that can only hold whole numbers (eg. -2, -1, 0, 1, 2). C++ actually has four different integer variables available for use: **char, short, int, and long**. The only difference between these different integer types is that they have varying sizes — the larger integers can hold bigger numbers. For the sake of this tutorial, we will only be focusing on **int**.
 
@@ -116,15 +116,18 @@ Use floats for numbers with decimals since integers only hold whole numbers.
 ## Intro to Strings
 
 If we don't have any mathematical intentions for a data type and we just want a message, you might find it useful to use the data type string!
-It's used just like every other data type we've worked with so far, but the message or value assigned to it must be within a pair of quotation marks, strings can hold all characters. 
+Strings are initilized and declared in a similar manner to integers. The most important difference is that the message or value assigned to it must be within a pair of quotation marks. Strings, unlike integers, can hold all characters. 
 An example:
 
-        string mystring = "hello"
+        string mystring = "hello";
+        string mystring ("hello");
+        string mystring {"hello"};
+
+The examples above all print the same result.
 
 ## Intro to Booleans
 
-Booleans are an interesting data type, in C++ they're simply referred to as bools, and the variable name is just "bool".  They're made to hold either "true" or "false". Often they're used to work
-conditional "if" statements and the like, which we'll get to later, but for now just know that the declaration of a boolean looks like:
+Booleans are an interesting data type. In C++ they're simply referred to as bools, and the variable name is just "bool".  They're made to hold either "true" or "false". Often they're used to work conditional "if" statements and the like, which we'll get to later, but for now just know that the declaration of a boolean looks like:
 
         bool myboolean = true;
 or
