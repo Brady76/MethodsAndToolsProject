@@ -1,7 +1,6 @@
 #Lesson 4.1: Intro to Statements  
 
-Statement's can refer to anything from the code (from stating what a variable is when we initialize it, or what we want an expression to be) and are executed in the same order in which they appear in a program. For this lesson, we will focus on statements that allow us to control the flow of a program as it runs.
-
+Statements can refer to anything from the code (from stating what a variable is when we initialize it, or what we want an expression to be) and are executed in the same order in which they appear in a program. For this lesson, we will focus on statements that allow us to control the flow of a program as it runs.
 
 ##If and Else Statement's
 
