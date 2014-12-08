@@ -40,6 +40,7 @@ This program prints on screen the final values of x and y (5 and 7, respectively
 ##Arithmetic Operators
 
 Your arithmetic operators are:  
+
 | Operator      | Description   |
 | ------------- |:-------------:|
 | +             | Addition      |
@@ -99,6 +100,7 @@ These operators are typically used in loops (control structures that you'll be l
     --	Decrement   
 
 So for example:
+   
     x++
     x += 1
     x = x + 1
@@ -121,39 +123,49 @@ For example:
 
 These are operators we use to determine if values are greater than, less than, or equal to other values.  The result of these operators is a "true or false" (or boolean) output.
 These operators are:
-==	Equal to
-!=	Not equal to
-<	Less than
->	Greater than
-<=	Less than or equal to
->=	Greater than or equal to
+
+| Operator      | Description        |
+| ------------- |:------------------:|
+| ==            | Equal to           |
+| !=            | Not Equal to       |
+| <             | Less Than          |
+| >             | Greater Than       |
+| <=            | Less or Equal to   |
+| >=            | Greater or Equal to|
+
 
 This is important later when we learn to use conditional statements, but some examples are:  
-1 == 1	returns true
-2 <=1	returns false
-3 != 5	returns true
 
-Logical Operators
-----------
-This is also something that's more important when we're using conditional statements, but these are operators that work with boolean values 
-!	Not, this flips the true/false outcome of a statement, for example, !(5 <= 6) would return false, 5 is less than 6, but the not flips the evaluation of true to be false
-&&	And, Say we have two expressions, (a <= b) && (b == 5), with the && operator both of these conditions would have to be true for the whole expression to evaluate to true, otherwise it results in false
-||	Or, Take (a <= b) and (b==5) again, but now it's (a<=b) || (b==5), now only one of those expressions needs to be true for the whole expression to evaluate to true, it's only false when both are false
+    1 == 1	returns true
+    2 <=1	returns false
+    3 != 5	returns true
+
+##Logical Operators
+
+This is extremely important when using conditional statements. These are operators that work with boolean values (true or false)
+
+**! (Not)**: This flips the true/false outcome of a statement. For example, !(5 <= 6) would return false, 5 is less than 6, but the not flips the evaluation of true to be false
+
+**&& (And):**: Say we have two expressions, (a <= b) && (b == 5), with the && operator both of these conditions would have to be true for the whole expression to evaluate to true, otherwise it results in false
+
+**|| (Or):**, Take (a <= b) and (b==5) again, but now it's (a<=b) || (b==5), now only one of those expressions needs to be true for the whole expression to evaluate to true, it's only false when both are false
 
 Type Casting
 ----------
 Type casting is a feature of C++ that allows you to convert a value from one data type to another, it looks like this:
-float z;
-int x = 5;
-z = (float) x;
+
+    float z;
+    int x = 5;
+    z = (float) x;
+
 In this case, the int 5 is converted into the float 5
 
 String arithmetic
 ----------
 You can combine strings together using the "+" operator. It looks like this:
 
-string x = "hello";
-x += "hi";
+    string x = "hello";
+    x += "hi";
 
 At this point, x would contain "hellohi"
 
