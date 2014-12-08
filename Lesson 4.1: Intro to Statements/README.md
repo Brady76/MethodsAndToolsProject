@@ -42,10 +42,10 @@ In C++ there are statements called **iteration statements**. Iteration statments
 
 	for (initialization; condition; increment) statement;
 
-⋅⋅In C++, an **iteration** is each time a loop is executed. An **iterator** is the counter that we use to control the number of iterations that are executed. An iterator can also be a cursor used to navigate data structures.
-⋅⋅The **initialization** is generally where we declare our iterator
-⋅⋅The **condition** functions exactly the same as they did in the "if/else" statements introduced earlier.  
-⋅⋅The **increment** is generally how we manipulate our iterator until we eventually reach the end condition of our loop. For example, we could manipulate the iterator by:
+⋅*⋅In C++, an **iteration** is each time a loop is executed. An **iterator** is the counter that we use to control the number of iterations that are executed. An iterator can also be a cursor used to navigate data structures.
+⋅⋅*The **initialization** is generally where we declare our iterator
+⋅⋅*The **condition** functions exactly the same as they did in the "if/else" statements introduced earlier.  
+⋅⋅*The **increment** is generally how we manipulate our iterator until we eventually reach the end condition of our loop. For example, we could manipulate the iterator by:
 	
 	iterator++ (increment up by 1) 
 	iterator-- (decrement down by 1)
