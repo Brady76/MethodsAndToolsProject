@@ -8,11 +8,6 @@ Before we get started, you will find that each chapter of this curriculum will b
 
 In order to code, it is important to understand the basic concept on how C++ works. Each section will contain a README.md file that provides a detailed description on how the specific topic covered works, and a tutorial on how to implement that specific code.
 
-
-## Who Wants to be a C++ Programmer Game!
-
-After you feel that you are comfortable with the lessons in these tutorials, you can play the "Who Wants to be a C++ Programmer" quiz game! This game is designed to test your knowledge with the basics of C++, and provide insight on where/what areas you should improve on! This game can be downloaded and run through your terminal.
-
 ## Practice Assignments
 
 The key to becoming a great programmer is practice. In these tutorials, we have provided templates and test files for you to practice implementing your own code. Each section will have their own assignment in which you can practice writing your own code, and test files for each assignment so you'll know whether or not you have implemented your code correctly.
@@ -94,3 +89,6 @@ Have fun!
 1. Helper Function
 2. Recursive summation for int x
 
+## Who Wants to be a C++ Programmer Game!
+
+After you feel that you are comfortable with the lessons in these tutorials, you can play the "Who Wants to be a C++ Programmer" quiz game! This game is designed to test your knowledge with the basics of C++, and provide insight on where/what areas you should improve on! This game can be downloaded and run through your terminal.
