@@ -9,13 +9,11 @@ Before we get started, you will find that each chapter of this curriculum will b
 In order to code, it is important to understand the basic concept on how C++ works. Each section will contain a README.md file that provides a detailed description on how the specific topic covered works, and a tutorial on how to implement that specific code.
 
 
-## Executable Terminal Program
+## Who Wants to be a C++ Programmer Game!
 
-Similar to any spoken language, C++ and all programming languages have a specific syntax or way on how things are written. To give you practice on C++ syntax, each lesson will include an interactive file that allows you to practice typing in the C++ language. 
+After you feel that you are comfortable with the lessons in these tutorials, you can play the "Who Wants to be a C++ Programmer" quiz game! This game is designed to test your knowledge with the basics of C++, and provide insight on where/what areas you should improve on! This game can be downloaded and run through your terminal.
 
-
-## Practice Assignemnts
-
+## Practice Assignments
 
 The key to becoming a great programmer is practice. In these tutorials, we have provided templates and test files for you to practice implementing your own code. Each section will have their own assignment in which you can practice writing your own code, and test files for each assignment so you'll know whether or not you have implemented your code correctly.
 
@@ -46,7 +44,7 @@ Have fun!
 2. Ints
 3. Floats
 
-**Exercise:** Quiz on different data types. This quiz quiz will be on our HTML website that will have a hide/show solution function.
+**Exercise:** Quiz on different data types. This quiz quiz will be on our HTML website that will test you on the basics of variables and different data types.
 
 ### Lesson 3: Operators
 
@@ -67,15 +65,13 @@ Have fun!
 #### Lesson 4.1: Intro to Statements
 **Goal:** Introduce different types of statements. We will introduce the following concepts in this tutorial:
 
-1. If Loops
+1. If/Else 
 2. For Loops
 3. While Loops
 4. Different statements
 --* Jump Statements
 --* Break Statements
 --* Continue Statements
-
-**Quiz:** What would be the output? (Quiz on different inputs regarding various statements. This quiz quiz will be on our HTML website that will have a hide/show solution function.)
 
 **Exercise:** Implement a program using various types of loops
 
@@ -89,4 +85,11 @@ Have fun!
 
 **Goal:** Introduce functions (Structure program in segments of code to perform certain tasks)
 
-**Exercise:** Brady can do this
+1. Functions
+2. Void Functions
+3. Recursive Functions
+
+**Exercise:** Implement a variety of functions
+
+1. Helper Function
+2. Recursive summation for int x
