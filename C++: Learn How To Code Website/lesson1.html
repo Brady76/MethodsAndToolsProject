@@ -1,0 +1,200 @@
+<html>
+<head>
+<title>C++ Tutorials!: Learn How to Code Lesson 1</title>
+<link rel="stylesheet" type="text/css" href="lesson1.css">
+</head>
+<body>
+<div id="container"> </div>
+<div id="title"> Lesson 1: Structure of a Program </div>
+<div id="sidebar">
+	<nav>
+		<ul> 	
+			<li><a href="homepage.html">Homepage</a></li> 
+			<li><a href = "lesson2.html"> Lesson 2: Variables and Types </a> </li>
+			<li><a href = "lesson3.html"> Lesson 3: Operators </a> </li>
+			<li><a href = "lesson41.html"> Lesson 4.1: Intro to Statements </a> </li>
+			<li><a href = "lesson42.html"> Lesson 4.2: Functions </a> </li>
+			<li><a href = "CplusplusGame.html"> Who Wants to Be A C++ Programmer </a> </li>		
+		</ul>
+	</nav>
+</div>
+<div id = "intro">
+	<p>Welcome to Lesson 1 of C++ tutorials! This lesson will introduce the basic structure of a C++ program. You will also implement
+	 your first program called "Hello World". Although it is a very simple, it contains the fundamental components of a C++ program.
+	</p>
+</div>
+
+<div id="content"> 
+	<h1>Hello World</h1>
+	<p>
+		The best way to learn a programming language is by writing programs. Here, we have a basic program that prints "Hello World" (which is typically the first program that beginners write). We have broken down the program line by line to discuss what each component of our program does.
+	</p>
+	<pre>
+		//my first program in C++
+		#include &lt iostream &gt
+		int main();
+		{
+			std::cout &lt &lt "Hello World!";
+		}
+	</pre>
+	<h2> Line 1: // My first program in C++: </h2>
+	<p>
+		The two slash signs, "//" indicate that the line is a comment by the programmer. Typically, programmers use these 
+		comments as observations or descriptions of the program or function that succeeds the comment. 
+		Comments have no effect on the behavior of the program itself, but they are useful tools that help the user understand 
+		what the actual code is doing. In this example, the comment just states what the name of the program is.
+	</p>
+	<h2> Line 2: #include : </h2>
+	Lines beginning with a hash sign (#) are directives read and interpreted by what is known as the preprocessor. They are special
+	lines interpreted before the compilation of the program itself begins. In this case, the directive #include , instructs the 
+	preprocessor to include a section of standard C++ code, known as header iostream, that allows to perform standard input 
+	and output operations, such as writing the output of this program (Hello World) to the screen.
+	
+	<h2> Line 3: A blank line.:</h2>
+	<p>
+		Blank lines have no effect on a program. They simply improve readability of the code.
+	</p>
+	
+	<h2> Line 4: int main():</h2>
+	<p>This line initiates the declaration of a function. A function is a section of code that performs a certain task.
+	Every function is given first be a data type: in this case is int. After the data type is declared, the function
+	is given a name: in this case, the name given is main. The name of functions are introduced with a succession of
+	a type of data that they are processing. The () following main are parameters. The function named main is a special
+	function in all C++ programs; it is the function called when the program is run. The execution of all C++ programs
+	begins with the main function, regardless of where the function is actually located within the code. We will discuss
+	functions in greater detail in a later chapter.</p>
+	
+	<h2>line 5 and 7: {and}: </h2>
+	<p>The open brace { at line 5 indicates the beginning of main's function definition, and the closing brace } at line 7, 
+	indicates its end. The statements within the brackets form defines what happens when main is called. All functions use 
+	braces to indicate the beginning and end of their definitions.</p>
+
+	<h2> Line 6:std::cout<<"Hello World!";:</h2>
+	<p>
+		This line is a C++ statement. A statement is an expression that can actually produce some effect. It specifies what 
+	    the program does, essentially encapsulating the bulk of the program. Statements are executed in the same order that 
+	    they appear within a function's body.
+	</p>
+	<h2>3 parts of Line 6</h2>
+	
+	<h3>1. std:: cout :</h3>
+	<p>
+		Identifies the standard character output device (usually, this is the computer screen).
+	</p>
+	<h3> 2. << :</h3>
+	 <p>
+		 Is the insertion operator. This indicates what follows << is inserted into std::cout.
+	</p>
+	<h3> 3. "Hello world!" : </h3>
+	<p>
+		The sentence we wish to print within quotes. This sentence is the content inserted into the standard output. Be sure to 
+		include the quotation marks!
+	</p>
+	<p>
+		Notice that the statement ends with a semicolon (;). 
+		Similar to how a period ends a sentence in English, a semicolon marks the end of a statement in C++. 
+		All C++ statements must end with a semicolon character. 
+		One of the most common syntax errors in C++ is forgetting to end a statement with a semicolon.
+	 </p>
+	
+	<h1>Comments</h1>
+	<p>
+	As noted above, comments do not affect the operation of the program. Though they do not change the nature of the program itself,
+	they are useful tools to document the source code directly on what the program does and how it operates.
+	</p>
+	<p>
+		C++ supports two ways of commenting code
+	</p>
+	<pre>
+		// line comment
+		/* Block Comment */ 
+	</pre>
+	<h4> 1. Line Comments: </h4>
+	<p> Line comments discard everything from where the pair of slash signs (//) are found up to the end of that same line.</p>
+	<h4> 2. Block Comments: </h4>
+	<p> 
+	 Block comments discard everything between the /* characters and the first appearance of the */ characters, with the possibility of
+	 including multiple lines.
+	 </p>
+	 
+	 <p>
+		 As a programmer, it is always good to practice using comments often. Generally, we use comments in functions to help us
+		 understand and keep track of what the program is doing. Let's practice by adding comments to the "Hello World" program
+		 we previously implemented.
+	 </p>
+	 <pre>
+		//my first program in C++
+		#include &lt iostream &gt
+		int main();
+		{
+			std::cout &lt &lt "Hello World!"; //standard output stream that takes and prints "Hello World"
+		}
+	</pre> 
+	 
+	<h1>Using namespace std</h1>
+	<p>
+		More often than not, there are generally multiple ways to write and implement code that yield in the same 
+		results. As you begin to write more code, you will develop your own style to implementing programs that will differ 
+		from other programmers. For this lesson, we will show you how to implement your own "Hello World" program without using
+		std::cout. 
+	</p>
+	<p>
+		If you have seen C++ code before, you may have seen cout being used instead of std::cout. Both name the same object. The first
+		one uses its unqualified name (cout), while the second qualifies it directly within the namespace std (std::cout).
+	</p>
+		
+	<p>
+		cout is part of the standard library, and all the elements in the standard C++ library are declared within what is a called 
+		a namespace: the namespace std.
+	</p>
+	<p>
+		In order to refer to the elements in the std namespace, a program shall either qualify each and every use of elements of the 
+		library (as we have done by prefixing cout with std::), or introduce visibility of its components. The most typical way to 
+		introduce visibility of these components is by means of using declarations:
+	</p>
+	<pre>
+		using namespace std;
+	</pre>
+	<p>
+		The above declaration allows all elements in the std namespace to be accessed in an unqualified manner (without the std:: 
+		prefix).
+	</p>
+	<p>
+		We can implement the Hello World program using std namespace in an unqualified manner. Running the program will yield the 
+		same results as our previous implementation, but we see that this version has improved readability.
+	</p>
+		 <pre>
+		//my second program in C++
+		#include &lt iostream &gt
+		int main()
+		{
+			cout &lt &lt "Hello World!";
+		}
+	</pre>
+<div id ="assignment">
+	<h1> Assignment # 1: Hello World </h1>
+	<p>
+		For our first practice assignment, we will implement our own version of our "Hello World" program. Open the <b>HelloWorld.cpp</b>
+		file and edit/implement your code there. 
+	</p>
+	<p>
+		In order to pass the test file, your code must include a function <b>int main()</b> that:
+	</p>
+	<p>
+	1. Prints <b>Hello World</b>
+	</p>
+	<p>
+		2. Prints <b>This is my first C++ program.</b>
+	</p>
+	<p>
+		Remember that C++ is a case sensitive language and that spelling matters, so be sure to double check your work before running the test file.
+	</p>
+	<a href = "HelloWorld.cpp" download> HelloWorld.cpp</a>
+	<p>
+		Good Luck!
+	</p>
+	<button onclick="location.href='lesson2.html'"> Lesson 2: Variables and Types</button>
+</div> 
+<div id="footer"> CSCI 3308 Software Methods and Tools Project Brady Auen, Deep Desai, Kevin Vo </div>
+</body>
+</html>

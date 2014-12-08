@@ -1,0 +1,277 @@
+<html>
+<head>
+<title>C++ Tutorials!: Learn How to Code Lesson 4.1</title>
+<link rel="stylesheet" type="text/css" href="lesson41.css">
+</head>
+<body>
+<div id="container"> </div>
+<div id="title"> Lesson 4.1: Intro to Statements </div>
+<div id="sidebar">
+	<nav>
+		<ul> 	
+			<li><a href="homepage.html">Homepage</a></li> 
+			<li><a href = "lesson1.html"> Lesson 1: Structure of a Program </a> </li>
+			<li><a href = "lesson2.html"> Lesson 2: Variables and Types </a> </li>
+			<li><a href = "lesson3.html"> Lesson 3: Operators </a> </li>
+			<li><a href = "lesson42.html"> Lesson 4.2: Functions </a> </li>
+			<li><a href = "CplusplusGame.html"> Who Wants to Be A C++ Programmer </a> </li>		
+		</ul>
+	</nav>
+</div>
+<div id = "intro">
+	<p>
+		Statement's can refer to anything from the code, from stating what a variable is when we initialize it, or what we want an expression to be and so on, but there are certain statements that allow us to
+		control the flow of a program as it runs.
+	</p>
+</div>
+
+<div id="content"> 
+	<h1>If and Else Statements</h1>
+	<p>
+		If and Else Statement's are known as "Selection Statements", typically of the syntax:
+	</p>
+	<pre>
+	if condition(s)) statement 
+	</pre>
+	<p>
+		Conditions involve logical operators, meaning that an "if" statement will execute if it evaluates to true. but won't if it evaluates to false.  Here are some examples:
+	</p>
+	<pre>
+		if (x <= 5) statement		If x is less than or equal to 5, execute the statement
+		if (x == true) statement	If x is true, execute the statement
+		if (x >= y) statement		If x is greater than or equal to y, execute the statement
+	</pre>
+	<p>
+		Else statements are what they sound like. They have to come after an "if" statement, and generally execute after the first condition isn't met. Simply put, an if/else statement basically states " Do this if a condition is met, and if it is not met, do this instead." Here are some examples:
+	</p>
+	<pre>
+		if (x <= 5)
+		{
+			cout << "x is less than or equal to 5" << endl;
+		}
+		else
+		{
+			cout << "x is greater than 5" << endl;
+		}
+	</pre>
+	<p>
+		There are some scenarios where we might want more conditions. In this case we, would use an "else if (condition) statement" Here is an example:
+	</p>
+	<pre>
+		if (thing == bird)
+		{
+			cout << "It's a bird!" << endl;
+		}
+		else if (thing == plane)
+		{
+			cout << "It's a plane!" << endl;
+		}
+		else
+		{ 
+			cout << It's superman! << endl;
+		}
+	</pre>
+	<h1>
+		For Loops
+	</h1>
+	<p>
+		In C++ there are statements called **iteration statements**. Iteration statments repeat a statement while a specific condition is filled. The most popular of these is the <b>For Loop</b>. The syntax is:
+	</p>
+	<pre>
+		for(initialization; condition; increment)
+		{
+			statement;
+		}
+	</pre>
+	<p>
+		In C++, an <b>iteration</b> is each time a loop is executed. An <b>iterator</b> is the counter that we use to control the number of iterations that are executed. An iterator can also be a cursor used to navigate data structures.
+	</p>
+	<p>
+		 The <b>initialization</b> is generally where we declare our iterator
+	</p>
+	<p>
+		The <b>condition</b> functions exactly the same as they did in the "if/else" statements introduced earlier. 
+	</p>
+	<p>
+		The <b>increment</b> is generally how we manipulate our iterator until we eventually reach the end condition of our loop. For example, we could manipulate the iterator by:	
+	</p>
+	<pre>
+		iterator++ (increment up by 1) 
+		iterator-- (decrement down by 1)
+		iterator+=2 (increment up by 2) 
+	</pre>
+	<p>
+		These are only a few examples of how you can manipulate your increments. Keep in mind however, if you manipulate your increment in a way that the condition will never be false, your loop will continue infinitely. 
+	</p>
+	<p> An Example:</p>
+	<pre>
+		for(int iterator = 5; iterator >= 0; iterator--)
+		{
+			cout << iterator << endl;
+			}
+	</pre>
+	<p>
+		The above example would print:
+	</p>
+	<pre>
+		5	//initialization value
+		4	//1st increment (5-1)
+		3	//2nd increment (4-1)
+		2	//3rd increment (3-1)
+		1	//4th increment (2-1)
+		0	//5th increment (1-1). Notice the loop will exit when the function prints 0.
+	</pre>
+	<p>
+		The previous example provides a simple representation of a for loop. Our initialiation value is 5, and our iterator decrements by 1 until the intitial condition is false.
+		We can use commas while we're inside the parentheses to include extra parts to each section (sections divided by the semicolons) An example:
+	</p>
+	<p>
+		But what if we want two conditions?  What if we want three iterators, or several different increments? We can write more conditions to include more conditions if desired. We would do so by using commas while we're inside the parentheses to include extra parts to each section (sections divided by the semicolons). For example:
+	</p>
+	<pre>
+		int main() 
+		{
+			for(int iterator1 = 3,iterator2 = 5; iterator1 >=0, iterator2 >=1; iterator1--,iterator2--)
+			{
+				cout << iterator1 << " " << iterator2 << endl;
+			}
+		}
+	</pre>
+	<p>
+		The above example would print:
+	</p>
+	<pre>
+		3 5
+		2 4
+		1 3
+		0 2
+		-1 1
+	</pre>
+	<p>
+		Notice that iterator1 actually goes below 0 due to our second condition in our last print statement. 
+	</p>
+	<h1>
+		While Loops
+	</h1>
+	<p>
+		While Loop's are similar to For Loop's but are much simpler, the syntax is:
+	</p>
+	<pre>
+		while(condition) 
+		{
+			statement
+		}
+	</pre>
+	<p>
+		Similar to a for loop, a while loop executes so long as a particular condition is met. Unlike for loops, however, while loops do not use iterators in their set up. Because while loops lack iterators, we have initialize our variables and iterators outside of the loop itself. For example:
+	</p>
+	<pre>
+		int main() 
+		{
+			int interator = 3;
+			while (iterator >= 0)
+			{
+				cout << iterator << endl;
+				iterator--;
+			}
+		}
+	</pre>
+	<p>
+		This example would print:
+	</p>
+	<pre>
+		3	// Our initialization value is 3
+		2	// Decrement by 1 (3-1)
+		1	// Decrement by 1 (2-1)
+		0	// Decrement by 1 (1-1) and exit
+	</pre>
+	<p>
+		So in comparison to the for loop where we had the initialization for iterator inside the parentheses, we move it up above it, and we have it's incrementation placed inside of the loop. The initialization has to occur outside of the loop, or else it will simply be reinitialized at the beginning of each iteration. 
+	</p>
+	<h1>
+		Jump Statements
+	</h1>
+	<h1>
+		Continue Statement
+	</h1>
+	<p>
+		The <b>continue statement</b> tells us to skip the rest of the statement in a loop, and jump to the top of the loop for another iteration. For an example:
+	</p>
+	
+	<pre>
+		for(int iterator = 5; iterator >= 0; iterator--)
+		{
+			if (iterator == 3)
+			{
+				continue;
+			}
+			cout << iterator << endl;
+			}
+	</pre>
+	<p> 
+		This would print:
+	</p>
+	<pre>
+		5
+		4
+		2
+		1
+		0
+	</pre>
+	<p>
+		Notice that the 3 is missing. When our iterator is equal to three, we are told to continue. This means that the flow of that iteration will never print three, and will instead skip to two and conitnue to proceed with the loop.
+	</p>
+	<h1>
+		Break Statement
+	</h1>
+	<p>
+		<b>Break statements</b> tell us to exit a loop entirely when we reach it. For example:
+	</p>
+	<pre>
+		for(int iterator = 5; iterator >= 0; iterator --)
+		{
+			if (iterator == 3) 
+			{
+				break;
+			}
+			cout << iterator << endl;
+		}
+	</pre>
+	<p>
+		It would print:
+	</p>
+	<pre>
+		5
+		4
+	</pre>
+	<p>
+		When iterator is equal to three, we're told to exit the loop entirely!
+	</p>
+</div>
+
+
+<div id ="assignment">
+	<h1> Assignment # 4.1: Intro to Statements </h1>
+	<p>
+		For this assignment you will be asked to implement a program using the various statments you've learned in this tutorial. For this exercise, you will be asked to:
+	</p>
+	<p>
+		1. Use an if and else statement to determine if value x is even or odd, return true if it's even, odd if it's false
+	</p>
+	<p>
+		2. Use a for loop to make a summation function. A summation is similar to a factorial except you add all the previous iterations. The summation of 5, for example, is equal to 5 + 4 + 3 + 2 + 1
+	</p>
+	<p>
+		3. Implement Batman's theme song using a while loop 
+	</p>
+	<a href = "L41Assignment.cpp" download> L4.1Assignment.cpp</a>
+
+	 
+	<p>	 
+		 Good Luck!
+	</p>
+	<button onclick="location.href='lesson42.html'"> Lesson 4.2: Functions</button>
+</div> 
+<div id="footer"> CSCI 3308 Software Methods and Tools Project Brady Auen, Deep Desai, Kevin Vo </div>
+</body>
+</html>

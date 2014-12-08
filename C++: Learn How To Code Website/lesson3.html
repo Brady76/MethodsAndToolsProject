@@ -1,0 +1,251 @@
+<html>
+<head>
+<title>C++ Tutorials!: Learn How to Code Lesson 3</title>
+<link rel="stylesheet" type="text/css" href="lesson3.css">
+</head>
+<body>
+<div id="container"> </div>
+<div id="title"> Lesson 3: Operators and Arithmetic</div>
+<div id="sidebar">
+	<nav>
+		<ul> 	
+			<li><a href="homepage.html">Homepage</a></li> 
+			<li><a href = "lesson1.html"> Lesson 1: Structure of a Program </a> </li>
+			<li><a href = "lesson2.html"> Lesson 2: Variables and Types </a> </li>
+			<li><a href = "lesson41.html"> Lesson 4.1: Intro to Statements </a> </li>
+			<li><a href = "lesson42.html"> Lesson 4.2: Functions </a> </li>
+			<li><a href = "CplusplusGame.html"> Who Wants to Be A C++ Programmer </a> </li>		
+		</ul>
+	</nav>
+</div>
+<div id = "intro">
+	<p>
+		Now we're going to start really digging into the interesting stuff with your coding assignments.  In this chapter we're going to learn about operators in C++ and how we use them (namely to implement arithmetic)
+	</p>
+</div>
+
+<div id="content"> 
+	<h1>Assignment Operator</h1>
+	<p>
+		The assignment operator assigns a value to a variable. For example
+	</p>
+	<pre>
+		x=5;
+	</pre>
+	<p>
+		This statement assigns the integer value 5 to the variable x. The assignment operation always takes place from right to left, and never the other way around.
+	</p>
+	<p>
+		An important thing to keep in mind is that we are only assigning the value of y to x at the moment of the assignment operation. Therefore, if y changes at a later moment, it will not affect the new value taken by x. Let's go over a quick example to show how assignment operators work.
+	</p>
+	<pre>
+		// assignment operator
+		#include <iostream>
+		using namespace std;
+		int main ()
+		{
+			int x, y;         // x:?,  y:?
+			x = 9;            // x:9, y:?
+			b = 4;            // x:9, y:5
+			a = b;            // x:5, y:5
+			b = 7;            // x:5, y:7
+			
+			cout << "x:";
+			cout << x;
+			cout << " y:";
+			cout << y;
+			// will print out "x:5, y:7"
+		}
+    </pre>
+    <p>
+		This program prints on screen the final values of x and y (5 and 7, respectively). Notice how x was not affected by the final modification of x, even though we previously declared x = y.
+    </p>
+	<h1>
+		Arithmetic Operators
+	</h1>
+	<p>
+		Your arithmetic operators are:
+	</p>
+	<pre>
+		| Operator      | Description   |
+		| ------------- |:-------------:|
+		| +             | Addition      |
+		| -             | Subtraction   |
+		| *             | Multiplication|
+		| /             | Division      |
+		| %             | Modulo        |
+	</pre>
+	<p>
+		The modulo operator is similar to division except it gives you the remainder (e.g. 11 % 3 will return 2, since 11/3 gives a remainder of 2).
+	</p>
+	<h1>
+		Compound Assignment Operators
+	</h1>
+	<p>
+		These operators are shortcuts of sort. They are used when you have an existing variable that you'd like to perform an operation on.  The ones for arithmetic are:  
+	</p>
+	<pre>
+		| Operator      | Equivalent to |
+		| ------------- |:-------------:|
+		| y +=  x       | y = y + x     |
+		| y -=  x       | y = y - x     |
+		| x *=  y       | x = x * y     |
+		| x /=  y       | x = x / y     |
+	</pre>
+	<p>
+		Say you have a variable x which holds the value 5. If you would like to keep the variable assignment the same and add 5 to that value, you could write this like:
+	</p>
+	<pre>
+		    // using simple operators
+		    #include <iostream>
+			using namespace std;
+			int main ()
+			{
+				int x = 5;
+				x = x + 5;    // equivalent to 5+5
+				cout << x;    // prints 10
+				}
+	</pre>
+	<p>
+		Now suppose we wanted to take that same example and implement compound assignment operators. Our program would now look like this.
+	</p>
+	<pre>
+		// using simple operators
+		#include <iostream>
+		using namespace std;
+		int main ()
+		{
+			int x = 5;
+			x += 5;    // equivalent to 5+5
+			cout << x;    // prints 10
+		}
+	</pre>
+	<p>
+		Both of these would be valid and would end with x being set equal to 10, the same concept applies to the rest of the compound assignment operators
+	</p>
+	<h1>
+		Increment and Decrement Operators
+	</h1>
+	<p>
+		
+These operators are typically used in loops (control structures that you'll be learning about soon!). They are useful when we want to add or subtract 1 from an already exisiting variable. They are written as the following.
+	</p>
+	<pre>
+		    ++	Increment
+		    --	Decrement   
+	</pre>
+	<p>
+		So for example:
+	</p>
+	<pre>
+		x++
+		x += 1
+		x = x + 1
+	</pre>
+	<p>
+		Would all do the same thing!
+	</p>
+	<p>
+		One important thing to note is using the increment/decrement operator as a suffix versus using it as a prefix  
+		If the operator is used as a prefix, the value is incremented/decremented and then evaluated, if the operator is used as a suffix, the value is evaluated and then incremented/decremented
+	</p>
+	<p>
+		For example:
+	</p>
+	<pre>
+		x = 0
+		y = ++x
+		// x would hold 0, y would hold 1
+		
+		x = 0
+		y = x++
+		// x would hold 0, y would also hold 0
+	</pre>
+	<h1>
+		Comparison Operators
+	</h1>
+	<p>
+		These are operators we use to determine if values are greater than, less than, or equal to other values.  The result of these operators is a "true or false" (or boolean) output.
+	</p>
+	<p>
+		These operators are:
+	</p>
+	<pre>
+		| Operator      | Description        |
+		| ------------- |:------------------:|
+		| ==            | Equal to           |
+		| !=            | Not Equal to       |
+		| <             | Less Than          |
+		| >             | Greater Than       |
+		| <=            | Less or Equal to   |
+		| >=            | Greater or Equal to|
+	</pre>
+	<p>
+		This is important later when we learn to use conditional statements, but some examples are:  
+	</p>
+	<pre>
+		1 == 1	returns true
+		2 <=1	returns false
+		3 != 5	returns true
+	</pre>
+	<h1>
+		Logical Operators
+	</h1>
+	<p>
+		This is extremely important when using conditional statements. These are operators that work with boolean values (true or false)
+	</p>
+	<p>
+		<b>! (Not)</b>: This flips the true/false outcome of a statement. For example, !(5 <= 6) would return false, 5 is less than 6, but the not flips the evaluation of true to be false
+	</p>
+	<p>
+		<b>&& (And):</b>: Say we have two expressions, (a <= b) && (b == 5), with the && operator both of these conditions would have to be true for the whole expression to evaluate to true, otherwise it results in false
+	</p>
+	<p>
+		<b>|| (Or):</b>, Take (a <= b) and (b==5) again, but now it's (a<=b) || (b==5), now only one of those expressions needs to be true for the whole expression to evaluate to true, it's only false when both are false
+	</p>
+	<h1>
+		Type Casting
+	</h1>
+	<p>
+		Type casting is a feature of C++ that allows you to convert a value from one data type to another, it looks like this:
+	</p>
+	<pre>
+		float z;
+		int x = 5;
+		z = (float) x;
+	</pre>
+	<p>
+		In this case, the int 5 is converted into the float 5
+	</p>
+	<h1>
+		String Arithmetic
+	</h1>
+	<p>
+		You can combine strings together using the "+" operator. It looks like this:
+	</p>
+	<pre>
+		string x = "hello";
+		x += "hi";
+	</pre>
+	<p>
+		At this point, x would contain "hellohi"
+	</p>
+</div>	
+
+
+<div id ="assignment">
+	<h1> Assignment # 3: Operators and Arithmetic </h1>
+	<p>
+		For this assignment, you will be asked to implement a set of functions that follows a specific order. Follow the instructions in the comments above each function and run it when you're done to see if you passed.
+	</p>
+	
+	<a href = "L3Assignment.cpp" download> L3Assignment.cpp</a>
+	 
+	<p>	 
+		 Good Luck!
+	</p>
+	<button onclick="location.href='lesson41.html'"> Lesson 4.1: Intro to Statements</button>
+</div> 
+<div id="footer"> CSCI 3308 Software Methods and Tools Project Brady Auen, Deep Desai, Kevin Vo </div>
+</body>
+</html>

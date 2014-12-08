@@ -1,0 +1,328 @@
+<html>
+<head>
+<title>C++ Tutorials!: Learn How to Code Lesson 2</title>
+
+<link rel="stylesheet" type="text/css" href="lesson2.css">
+</head>
+<body>
+<div id="container"> </div>
+<div id="title"> Lesson 2: Variables and Types </div>
+<div id="sidebar">
+	<nav>
+		<ul> 	
+			<li><a href="homepage.html">Homepage</a></li> 
+			<li><a href = "lesson1.html"> Lesson 1: Structure of a Program </a> </li>
+			<li><a href = "lesson3.html"> Lesson 3: Operators </a> </li>
+			<li><a href = "lesson41.html"> Lesson 4.1: Intro to Statements </a> </li>
+			<li><a href = "lesson42.html"> Lesson 4.2: Functions </a> </li>
+			<li><a href = "CplusplusGame.html"> Who Wants to Be A C++ Programmer </a> </li>		
+		</ul>
+	</nav>
+</div>
+<div id = "intro">
+	<p>
+		By now you've written your first C++ program, congratulations! Though the "Hello World" 
+		program may seem a bit trivial, programming is not limited to printing simple sentences on screens. 
+		In this chapter we're going to discuss variables as well as the data types *string*, *float*, *boolean*
+		, and *int*. Variables will allow us to go a little further with the capabilities of C++ and they will 
+		enable us to write programs that perform useful tasks.
+	</p>
+</div>
+
+<div id="content"> 
+	<h1>Variables</h1>
+	<p>
+		A variable provides us with named storage that our programs can manipulate. Each variable in C++ has a specific 
+		type, which determines the size and layout of the variable's memory; the range of values that can be stored within 
+		that memory; and the set of operations that can be applied to the variable. </p>
+	<p>
+		So why use variables? Suppose we are asked to remember the number 2, and then we are asked to also memorize the number 
+		7 at the same time. We now have 2 different values stored in our memory (2 and 7). Now, if we were asked to add 1 to the 
+		first number stired, we should retain the numbers 3 (that is 2+1) and 7 in our memory. Then we could, for example, add 
+		these values and obtain 10 as result.
+	</p>
+	
+	<pre>
+		a = 2;
+		b = 7;
+		a = a + 1;
+		result = a + b;
+	</pre>
+	<p>
+		Considering the fact that we've only used two small integer values, the previous example is pretty trivial. However, your 
+		computer can store millions of numbers like these at the same time and conduct sophisticated mathematical operations with 
+		them.
+	</p>
+	<p>
+		Each variable needs a unique name that identifies it and distinguishes it from the others. For example, in the previous 
+		code the variable names were a, b, and result, but we could have called the variables any names we could have come up with, 
+		as long as they were valid C++ identifiers.
+	</p>
+	<h1>
+		Identifiers
+	</h1>
+	<p>
+		An identifier is any sequence of one or more characters including the underscore (_) excluding symbols, punctuation marks, 
+		and spaces. This identifier however can't be the same as the predefined keywords of C++ that indicate operations.  It's 
+		also important to note that C++ is case sensitive, so the indentifier "ITERATOR" wouldn't be the same as "iterator", 
+		for example. 
+	</p>
+	<h1>
+		Declaring Variables
+	</h1>
+	<p>
+		Before we use any variables, we must declare it and its type before we can use it. This informs the compiler the size to 
+		reserve in memory for the variable and how to interpret its value. The syntax to declare a new variable in C++ is 
+		straightforward: we simply write the type followed by the variable name (i.e., its identifier). For example:
+	</p>
+	<pre>
+		int a;
+		float thenumber;
+	</pre>
+	
+	<p>
+		These are two valid declarations of variables. The first one declares a variable of type int with the identifier a. The second one declares a variable of type float with the identifier thenumber. Once declared, the variables a and thenumber can be used within the rest of their scope in the program.
+	</p>
+	<p>
+		If we want to declare one or more variables of the same type, they can all be declared in a single statement by separating their identifiers with commas. For example:
+	</p>
+	<pre>
+		int a, b, c;
+	</pre>
+	<p>
+		In this example, we have declared three variables of type int with the identifier a, b and c. This is the equivalent to the following code:
+	</p>
+	<pre>
+		int a;
+		int b;
+		int c;
+	</pre>
+	<h1>
+		Initializing Variables
+	</h1>
+	<p>
+		After variables are declared, they have an undetermined value until they are assigned a value for the first time. Initialization is when we give the variable a specific value.
+	</p>
+	<p>
+		In C++, there are three ways to initialize variables. They are all equivalent and are reminiscent of the evolution of the language over the years:
+	</p>
+	<p>
+		The first one, known as c-like initialization (because it is inherited from the C language), consists of appending an equal sign followed by the value to which the variable is initialized:
+	</p>
+	<p>
+	<b>
+		type identifier = initial_value;
+	</b>
+	</p>
+	<p>
+		For example, to declare a variable of type int called x and initialize it to a value of zero from the same moment it is declared, we can write:
+	</p>
+	<pre>
+		int a = 5;
+	</pre>
+	<p>
+		The second way, which is known as constructor initialization (introduced by the C++ language), encloses the initial value between parentheses (()):
+	</p>
+	<p>
+	<b> type identifier (initial value);</b>
+	</p>
+	<p>
+		For Example:
+	</p>
+	<pre>
+		int a (5);
+	</pre>
+	<p>
+		The third way, which is known as uniform initialization, uses a similar method to the previous example, but it uses curly braces ({}) instead of parentheses (this was introduced by the revision of the C++ standard, in 2011):
+	</p>
+	<p>
+		<b>
+		type identifier {initial_value};
+		</b>
+	</p>
+	<p>
+		For example:
+	</p>
+	<pre>
+		int a {5};
+	</pre>
+	<p>
+		Any of these ways are valid ways to declare variables, but it is good practice to write code that is consistent. If you choose to use constructor initialization to declare one variable, make sure you use that method to declare all your variables for your whole program. This improves readability and helps you develop much cleaner code.
+	</p>
+	<h1>
+		Intro to Ints
+	</h1>
+	<p>
+		An integer type variable is a variable that can only hold whole numbers (eg. -2, -1, 0, 1, 2). 
+		C++ actually has four different integer variables available for use: <b>char, short, int, and long</b>. 
+		The only difference between these different integer types is that they have varying sizes — the larger integers 
+		can hold bigger numbers. For the sake of this tutorial, we will only be focusing on <b>int</b>.
+	</p>
+	<p>
+		In order to explain integers, we will declare and initialize the int, number.
+	</p>
+	<pre>
+		int Number;
+		int Number =5;
+	</pre>
+	<p>
+		Integers will pass in whole numbers. If you were to try to initialize the following values, you will get the following inputs:
+	</p>
+	<p>
+		1. Passing in decimals or non wole numbers: This will round your number down to the nearest whole number.
+	</p>
+	<pre>
+        int Number;
+        int Number = 5.5; //Only accepts whole numbers, so it will round down and return 5
+	</pre>
+	<p>
+		2. Passing in incorrect data types: you would get this message "error: invalid conversion from ‘const char*’ to ‘int’ [-fpermissive]"
+	</p>
+	<pre>
+        int Number;
+        Number = "String";
+	</pre>
+	<p>
+		3. Passing in true/false: Your number would be set to be equal to 1, if it was false it would be equal to 0, these are numerical values that represent true or false.
+	</p>
+	<pre>
+        int Number;
+        Number = true;
+	</pre>
+	<h1>
+		Intro to Floats
+	</h1>
+	<p>
+		To declare these variables we use the type name "float", for example:
+	</p>
+	<pre>
+		float Number = 5.5;	
+	</pre>
+	<p>
+		Notice something we did here, you can both declare and initialize a variable on the same line. This goes for all data types.	
+	</p>
+	<p>
+		Use floats for numbers with decimals since integers only hold whole numbers.
+	</p>
+	<h1>
+		Intro to Strings
+	</h1>
+	<p>
+		If we don't have any mathematical intentions for a data type and we just want a message, you might find it useful to use the data type string!
+		It's used just like every other data type we've worked with so far, but the message or value assigned to it must be within a pair of quotation marks, strings can hold all characters. 
+		An example:
+	</p>
+	<pre>
+        string mystring = "hello"
+	</pre>
+	<h1>
+		Intro to Booleans
+	</h1>
+	<p>
+		Booleans are an interesting data type, in C++ they're simply referred to as bools, and the variable name is just "bool".  They're made to hold either "true" or "false". Often they're used to work
+		conditional "if" statements and the like, which we'll get to later, but for now just know that the declaration of a boolean looks like:
+	</p>
+	<pre>
+        bool myboolean = true;
+	</pre>
+	<p> or </p>
+	<pre>
+        bool myboolean = false;	
+	</pre>
+</div>
+
+
+<div id ="assignment">
+	<h1> Assignment # 2: Variables and Types Quiz </h1>
+	<p>
+		 For this assignment we've made an HTML quiz for you with help from : http://www.hungrypiranha.org/make-a-website/html-quiz
+	</p>
+	<p>	 
+		 Good Luck!
+	</p>
+	<p class="question">1. What is result?
+		<pre>
+			a = 3;
+			b = 6;
+			a = a + 1;
+			result = a + b;
+		</pre>
+		</p>        
+
+<ul class="answers">            
+<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">30</label><br/>          
+<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">10</label><br/>            
+<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">9</label><br/>            
+<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">15</label><br/>       
+</ul>        
+
+
+<p class="question">2. How do I initialize an integer with variable name A?</p>        
+
+<ul class="answers">            
+<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">A</label><br/>           
+<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">int A;</label><br/>            
+<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">bool A;</label><br/>           
+<input type="radio" name="q2" value="d" id="q2d"><label for="q2d"> float A;</label><br/>       
+</ul>        
+
+<p class="question">3. How do I initialize variable <b>num</b> with initial value 7?</p>        
+
+<ul class="answers">            
+<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">int num = 7;</label><br/>            
+<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">int num(7)</label><br/>            
+<input type="radio" name="q3" value="c" id="q3c"><label for="q3c">int num{7}</label><br/>           
+<input type="radio" name="q3" value="d" id="q3d"><label for="q3d">All of the Above</label><br/>       
+</ul>        
+
+<p class="question">4. If my variable holds an integer 7 what type would it be?</p>        
+
+<ul class="answers">           
+<input type="radio" name="q4" value="a" id="q4a"><label for="q4a">int</label><br/>            
+<input type="radio" name="q4" value="b" id="q4b"><label for="q4b">string</label><br/>            
+<input type="radio" name="q4" value="c" id="q4c"><label for="q4c">bool</label><br/>            
+<input type="radio" name="q4" value="d" id="q4d"><label for="q4d">float</label><br/>        
+</ul>        
+
+<p class="question">5. If my variable, when printed, prints "hello" what type would it be?</p>        
+
+<ul class="answers">            
+<input type="radio" name="q5" value="a" id="q5a"><label for="q5a">String</label><br/>            
+<input type="radio" name="q5" value="b" id="q5b"><label for="q5b">Float</label><br/>            
+<input type="radio" name="q5" value="c" id="q5c"><label for="q5c">Boolean</label><br/>           
+<input type="radio" name="q5" value="d" id="q5d"><label for="q5d">Integer</label><br/>        
+</ul>        
+            
+
+<div id="category1">            
+<p>              
+<strong>Question 1:</strong> The correct answer is the <strong>10</strong>.</p>        
+</div>        
+
+<div id="category1">            
+<p>              
+<strong>Question 2:</strong> The correct answer is <strong>int A;</strong>.</p>        
+</div>        
+
+<div id="category1">            
+<p>                
+<strong>Question 3:</strong> The correct answer is <strong>All of The Above</strong>.</p>        
+</div>        
+
+<div id="category1">            
+<p>               
+<strong>Question 4:</strong> The correct answer is <strong>int</strong>.</p>        
+</div>        
+
+<div id="category1">            
+<p>                
+<strong>Question 5:</strong> The correct answer is <strong>String</strong>.</p>        
+</div>        
+
+        
+</div>
+	<button onclick="location.href='lesson3.html'"> Lesson 3: Operators</button>
+</div> 
+<div id="footer"> CSCI 3308 Software Methods and Tools Project Brady Auen, Deep Desai, Kevin Vo </div>
+</body>
+</html>
