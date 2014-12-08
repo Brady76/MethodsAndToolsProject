@@ -38,7 +38,7 @@ We have functolicious set up in the following manner:
 	int functolicious(int x, int y, int z){
 	}
 
-The return type of this function is *int*, the name is *functolicious*, and it's *parameters* are three int's (called x y and z). Therefore when we performed our function call __functolicious(5, 10, 3)__, we are basically saying:
+The return type of this function is *int*, the name is *functolicious*, and it's *parameters* are three int's (called x y and z). Therefore when we performed our function call *functolicious(5, 10, 3)*, we are basically saying:
 
 	x = 5;
 	y = 10;
@@ -48,8 +48,7 @@ From here,  the last statement of the function is:
 	
 	return value;
 
-Because we have called the function in main, wwe need something to send back into main. The value returned is then compared to 0, and the function main continues!
-Helper functions are extremely useful if there is a set of statements in which you want a particular set of values to be examined repeatedly. 
+Because we have called the function in main, wwe need something to send back into main. The value returned is then compared to 0, and the function main continues! Helper functions are extremely useful if there is a set of statements in which you want a particular set of values to be examined repeatedly. 
 
 ##Void Functions
 
@@ -105,11 +104,11 @@ When setting up recursive functions, we must always set up a __base case__,  or 
 
 When our function hits our base case (in this case, 1), our program has nothing left to recursively operate on and terminates.
 
-Our recursive function traverses like this:
-
-We have the line return(x * factorial(x-1)), in this case, x is 5 so it reads: 
--5 * factorial(4), and factorial 4 will evaluate to be 4 * factorial(3), extrapolating we get:
--5 * 4 * 3 * 2 * factorial(1), and so when we get to 1 we hit our base case, where we're told to just return 1 instead of going any deeper down the rabbit hole recursively!
--So we get our final answer, which is 120!
+Let's examine our example. 
+1. We have the line return(x * factorial(x-1)), in this case, x is 5 so it reads: 
+2. 5 * factorial(4), and factorial 4 will evaluate to be 4 * factorial(3)
+3. Extrapolating we get: 5 * 4 * 3 * 2 * factorial(1)
+4. When we get to 1 we hit our base case, where we're told to just return 1 instead of going any deeper down the rabbit hole recursively!
+4. Our final answer is 120!
 		
 	
