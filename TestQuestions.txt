@@ -32,7 +32,29 @@ Variables and Types
 	C) Float
 	D) None of the Above
 	Answer: D, 1 correlates to "true" in boolean
-	
+4) Say we have the following code: 
+	int x = 5;
+	float y = 7.5;
+	int final = x + y;
+   What does final hold?
+   	A) 13
+   	B) 12
+   	C) 12.5
+   	D) None of the above
+   Answer: B, when a float is put into an int it's rounded down
+   
+5) What's the longest type of integer?
+	A) Char
+	B) Short
+	C) Int
+	D) Long
+   Answer: D, lol
+   
+6) Which of these variable initializations would return an error?
+	A) int a = 0;
+	B) string c;
+	C) char a, b, c;
+	D) x = 7; 
 Operators and Arithmetic
 ----------
 1) What's an alternate way to writing x++?
@@ -52,6 +74,7 @@ Operators and Arithmetic
 	B) ||
 	C) ==
 	D) >=
+4) 
 Intro to Statements and Functions
 ----------
 1) Which of the following don't belong in the set up of a for loop (between the parentheses) 
