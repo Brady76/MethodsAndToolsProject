@@ -111,5 +111,10 @@ Let's examine our example.
 3. Extrapolating we get: 5 * 4 * 3 * 2 * factorial(1)
 4. When we get to 1 we hit our base case, where we're told to just return 1 instead of going any deeper down the rabbit hole recursively!
 4. Our final answer is 120!
-		
-	
+
+## Assignment
+
+For this assignment, you will be asked to implement a program using the helper and recurisve function that you've learned in this tutorial. You will be asked to:
+
+1. Write a recursive summation function for int x, return the summation
+2. Pass x and y to the multiplication function provided and return the result
