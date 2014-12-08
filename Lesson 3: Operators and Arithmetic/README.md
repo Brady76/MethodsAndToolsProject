@@ -40,40 +40,68 @@ This program prints on screen the final values of x and y (5 and 7, respectively
 ##Arithmetic Operators
 
 Your arithmetic operators are:  
--+	addition		
---	subtraction
--*	multiplication
--/	division
--%	modulo, modulo is similar to division except it gives you the remainder (e.g. 11 % 3 will return 2, since 11/3 gives a remainder of 2
+| Operator      | Description   |
+| ------------- |:-------------:|
+| +             | Addition      |
+| -             | Subtraction   |
+| *             | Multiplication|
+| /             | Division      |
+| %             | Modulo        |
 
+The modulo operator is similar to division except it gives you the remainder (e.g. 11 % 3 will return 2, since 11/3 gives a remainder of 2).
 
 ##Compound Assignment Operators
 
+These operators are shortcuts of sort. They are used when you have an existing variable that you'd like to perform an operation on.  The ones for arithmetic are:  
 
-These operators are shortcuts of sort, they're used when you have an existing variable that you'd like to perform an operation on.  The ones for arithmetic are:  
-+=	addition
--=	subtraction
-*=	multiplication
-/=	division
-%=	modulo
+| Operator      | Equivalent to |
+| ------------- |:-------------:|
+| y +=  x       | y = y + x     |
+| y -=  x       | y = y - x     |
+| x *=  y       | x = x * y     |
+| x /=  y       | x = x / y     |
 
-Say you have a variable x, x holds the value 5 and we want to add 5 more to it so x holds 10, you could write this like:
-x = x + 5
-x += 5
+Say you have a variable x which holds the value 5. If you would like to keep the variable assignment the same and add 5 to that value, you could write this like:
+
+    // using simple operators
+    #include <iostream>
+    using namespace std;
+
+    int main ()
+    {
+      int x = 5;
+      x = x + 5;    // equivalent to 5+5
+      cout << x;    // prints 10
+    }
+
+Now suppose we wanted to take that same example and implement compound assignment operators. Our program would now look like this.
+    
+    // using simple operators
+    #include <iostream>
+    using namespace std;
+
+    int main ()
+    {
+      int x = 5;
+      x += 5;       // equivalent to 5+5
+      cout << x;    // prints 10
+    }
+
 
 Both of these would be valid and would end with x being set equal to 10, the same concept applies to the rest of the compound assignment operators
 
-Increment and Decrement Operators
-----------
+##Increment and Decrement Operators
 
-These operators are typically used in loops (control structures that you'll be learning about soon!), they're useful when we want to add or subtract 1 from an already exisiting variable. They are
-++	Increment
---	Decrement   
+
+These operators are typically used in loops (control structures that you'll be learning about soon!). They are useful when we want to add or subtract 1 from an already exisiting variable. They are written as the following.
+
+    ++	Increment
+    --	Decrement   
 
 So for example:
-x++
-x += 1
-x = x + 1
+    x++
+    x += 1
+    x = x + 1
 
 Would all do the same thing!
 
@@ -81,16 +109,16 @@ One important thing to note is using the increment/decrement operator as a suffi
 If the operator is used as a prefix, the value is incremented/decremented and then evaluated, if the operator is used as a suffix, the value is evaluated and then incremented/decremented
 For example:
 
-x = 0
-y = ++x
-x would hold 0, y would hold 1
+    x = 0
+    y = ++x
+    x would hold 0, y would hold 1
 
-x = 0
-y = x++
-x would hold 0, y would also hold 0
+    x = 0
+    y = x++
+    x would hold 0, y would also hold 0
 
-Comparison Operators
-----------
+##Comparison Operators
+
 These are operators we use to determine if values are greater than, less than, or equal to other values.  The result of these operators is a "true or false" (or boolean) output.
 These operators are:
 ==	Equal to
