@@ -113,11 +113,11 @@ For example:
 
     x = 0
     y = ++x
-    x would hold 0, y would hold 1
+    // x would hold 0, y would hold 1
 
     x = 0
     y = x++
-    x would hold 0, y would also hold 0
+    // x would hold 0, y would also hold 0
 
 ##Comparison Operators
 
