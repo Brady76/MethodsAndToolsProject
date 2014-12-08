@@ -136,5 +136,4 @@ or
 
 ## Assignment #2
 
-For this assignment we've made an HTML quiz for you...
-[COMPLETE LATER ONCE HTML IMPLEMENTATION IS FINISHED]
+For this assignment we've made an short HTML quiz for you. The purpose of this is to understand basic variable assignment and data types.
