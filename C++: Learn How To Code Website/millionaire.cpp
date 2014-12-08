@@ -1,4 +1,10 @@
 //Who Wants to Be a Millionaire
+/**@mainpage Who Wants to Be a Millionaire cpp game!
+ * @authors Brady Auen, Kevin Vo, Deep Desai 
+ * @section briefing How the questions work
+ * An ascii question box is provided for each question, each question is multiple choice, the user is asked to input the number corresponding to the answer they choose and then confirm they
+ * want to answer that way (like the TV show!), if the question is correct the user progresses through the game, if the user is incorrect then they are allowed to choose between trying again or exiting
+ * */
 #include <iostream>
 #include <stdlib.h>
 #include <stdio.h>
@@ -845,4 +851,3 @@ int main()
 	}
 
 }
-
