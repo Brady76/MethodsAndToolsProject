@@ -171,4 +171,5 @@ At this point, x would contain "hellohi"
 
 Assignment
 ----------
-We have a coding assignment for you to work on, follow the instructions in the comments above each function and run it when you're done to see if you passed.
+
+For this assignment, you will be asked to implement a set of functions that follows a specific order. Follow the instructions in the comments above each function and run it when you're done to see if you passed.
