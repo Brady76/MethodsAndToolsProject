@@ -1,139 +1,156 @@
-Lesson 4.1: Intro to Statements  
-==========
+#Lesson 4.1: Intro to Statements  
 
-Statement's can refer to anything from the code, from stating what a variable is when we initialize it, or what we want an expression to be and so on, but there are certain statements that allow us to
-control the flow of a program as it runs.
+Statement's can refer to anything from the code (from stating what a variable is when we initialize it, or what we want an expression to be) and are executed in the same order in which they appear in a program. For this lesson, we will focus on statements that allow us to control the flow of a program as it runs.
 
-If and Else Statement's
-----------
-If and Else Statement's are known as "Selection Statements", typically of the syntax:
-if (condition(s)) statement
 
-Condition's involve logical operators, meaning that an if statement will execute if it evaluates to true but won't if it evaluates to false.  Some examples:
-if (x <= 5) statement		If x is less than or equal to 5, execute the statement
-if (x == true) statement	If x is true, execute the statement
-if (x >= y) statement		If x is greater than or equal to y, execute the statement
+##If and Else Statement's
 
-Else statements are what they sound like, they have to come after an "if" statement, but it generally just means that if the first condition isn't true, this is what we're doing instead. Example:
-if (x <= 5){
-	cout << "x is less than or equal to 5" << endl;
-}
-else{
-	cout << "x is greater than 5" << endl;
-}
+If and Else Statement's are known as "Selection Statements". They are typically written in the following syntax:
 
-There are some scenarios where we might want even more conditions on something, in this case we'd use "else if (condition) statement" An example:
-if (thing == bird){
-	cout << "It's a bird!" << endl;
-}
-else if (thing == plane){
-	cout << "It's a plane!" << endl;
-}
-else{ 
-	cout << It's superman! << endl;
-}
+	if (condition(s)) statement
+
+Conditions involve logical operators, meaning that an "if" statement will execute if it evaluates to true. but won't if it evaluates to false.  Here are some examples:
+
+	if (x <= 5)			If x is less than or equal to 5, execute the statement
+	if (x == true)			If x is true, execute the statement
+	if (x >= y) 			If x is greater than or equal to y, execute the statement
+
+Else statements are what they sound like. They have to come after an "if" statement, and generally execute after the first condition isn't met. Simply put, an if/else statement basically states " Do this if a condition is met, and if it is not met, do this instead." Here are some examples:
+
+	if (x <= 5){
+		cout << "x is less than or equal to 5" << endl;
+	}
+	else{
+		cout << "x is greater than 5" << endl;
+	}
+
+There are some scenarios where we might want more conditions. In this case we, would use an "else if (condition) statement" Here is an example:
+
+	if (thing == bird){
+		cout << "It's a bird!" << endl;
+	}
+	else if (thing == plane){
+		cout << "It's a plane!" << endl;
+	}
+	else{ 
+		cout << It's superman! << endl;
+	}
+
+##For Loops
+
+In C++ there are statements called **iteration statements**. Iteration statments repeat a statement while a specific condition is filled. The most popular of these is the **For Loop**. The syntax is:
+
+	for (initialization; condition; increment) statement;
+
+--In C++, an **iteration** is each time a loop is executed. An **iterator** is the counter that we use to control the number of iterations that are executed. An iterator can also be a cursor used to navigate data structures.
+--The **initialization** is generally where we declare our iterator
+--The **condition** functions exactly the same as they did in the "if/else" statements introduced earlier.  
+--The **increment** is generally how we manipulate our iterator until we eventually reach the end condition of our loop. For example, we could manipulate the iterator by:
 	
-For Loop's
-----------
-In C++ there are statements called iteration statements that repeat a certain statement while a certain condition is filled, the most popular of these is the For Loop. The syntax is:
-for (initialization; condition; increment) statement;
+	iterator++ (increment up by 1) 
+	iterator-- (decrement down by 1)
+	iterator+=2 (increment up by 2) 
+	
+These are only a few examples of how you can manipulate your increments. Keep in mind however, if you manipulate your increment in a way that the condition will never be false, your loop will continue infinitely. 
 
-Initialization is generally where we declare our iterator
-An iterator is a term that's used in C++, each time a loop is executed we call that an "iteration", so the counter that we use to control the number of iterations there are is the "iterator"
-An iterator can also be a cursor used to navigate data structures, but that's for later on.
+for example:
 
-The condition is the same as a condition for the statements above, like (x <=5) and so on.  
-
-The increment is generally how we manipulate our iterator so that we eventually reach the end condition of our loop.  We could do things like iterator++, iterator--, iterator += 2, whatever 
-you think is necessary, just some manipulation of your iterator, but if you manipulate it in a way that the condition won't ever be false your loop will continue infinitely. 
-
-An example:
-
-for(int iterator = 5; iterator >= 0; iterator--){
-	cout << iterator << endl;
-}
+	for(int iterator = 5; iterator >= 0; iterator--){
+		cout << iterator << endl;
+	}
 
 The above example would print:
-5
-4
-3
-2
-1
-0
 
-There might be cases where we want to include more on the for loop line, like what if we want two conditions, or what if we want three iterators, several different increments?
-We can use commas while we're inside the parentheses to include extra parts to each section (sections divided by the semicolons) An example:
+	5	//initialization value
+	4	//1st increment (5-1)
+	3	//2nd increment (4-1)
+	2	//3rd increment (3-1)
+	1	//4th increment (2-1)
+	0	//5th increment (1-1). Notice the loop will exit when the function prints 0.
 
-int main(){
-for(int iterator1 = 3,iterator2 = 5; iterator1 >=0, iterator2 >=1; iterator1--,iterator2--){
-	cout << iterator1 << " " << iterator2 << endl;
-}
-}
+The previous example provides a simple representation of a for loop. Our initialiation value is 5, and our iterator decrements by 1 until the intitial condition is false.
 
-The above example would print:
-3 5
-2 4
-1 3
-0 2
--1 1
+But what if we want two conditions?  What if we want three iterators, or several different increments? We can write more conditions to include more conditions if desired. We would do so by using commas while we're inside the parentheses to include extra parts to each section (sections divided by the semicolons). For example:
+
+	int main(){
+		for(int iterator1 = 3,iterator2 = 5; iterator1 >=0, iterator2 >=1; iterator1--,iterator2--){
+			cout << iterator1 << " " << iterator2 << endl;
+		}
+	}
+
+This example would print:
+
+	 3  5
+	 2  4
+	 1  3
+	 0  2
+	-1  1
 
 Notice that iterator1 actually goes below 0 due to our second condition in our last print statement. 
 
-While Loop's are similar to For Loop's but are much simpler, the syntax is:
+##While Loops
+While Loops are similar to For Loops, but they are a little more simple. The syntax for a while loop is:
+
 while(condition) statement
 
-So since there's a lack of an iterator in the set up, you'll have to set up that technique outside of that initial syntax, so you'll want your variable in the condition initialized outside of the loop
-and the iteration to happen inside of it.  An example might looks like this:
+Similar to a for loop, a while loop executes so long as a particular condition is met. Unlike for loops, however, while loops do not use iterators in their set up. Because while loops lack iterators, we have initialize our variables and iterators outside of the loop itself. For example:
 
-int main(){
-int iterator = 3
-while(iterator >=0){
-	cout << iterator << endl; 
-	iterator--;
-}
-}
+	int main(){
+		int iterator = 3;
+		while(iterator >=0){
+			cout << iterator << endl; 
+			iterator--;
+		}
+	}
 
 This example would print:
-3
-2
-1
-0
 
-So compared to the for loop where we had the initialization for iterator inside the parentheses, we move it up above it, and we have it's incrementation placed inside of the loop.  The initialization 
-has to happen outside of the loop or it would simply be reinitialized to that at the beginning of each iteration. 
+	3	// Our initialization value is 3
+	2	// Decrement by 1 (3-1)
+	1	// Decrement by 1 (2-1)
+	0	// Decrement by 1 (1-1) and exit
 
-Jump Statement's
-----------
-These are statements that allow us to alter the flow of our program.  
+So in comparison to the for loop where we had the initialization for iterator inside the parentheses, we move it up above it, and we have it's incrementation placed inside of the loop. The initialization has to occur outside of the loop, or else it will simply be reinitialized at the beginning of each iteration. 
 
-First off we have the continue statement, which tells you to skip the rest of the statement in a loop and just go to the top of the loop and do another iteration, an example:
+##Jump Statements
 
-for(int iterator = 5; iterator >= 0; iterator--){
-	if (iterator == 3){
-	continue;
+Jump statments allow us to alter the flow of our program.  
+
+### Continue Statement
+
+The **continue statement** tells us to skip the rest of the statement in a loop, and jump to the top of the loop for another iteration. For an example:
+
+	for(int iterator = 5; iterator >= 0; iterator--){
+		if (iterator == 3){
+		continue;
+		}
+		cout << iterator << endl;
 	}
-	cout << iterator << endl;
-}
 
 This would print:
-5
-4
-2
-1
-0
-Notice that the 3 is missing, because when iterator is equal to three we're told to continue, meaning the flow of that iteration will never reach the cout statement instead decrementing to two and 
-then proceeding.
 
-Next we have the break statement, this statement tells us to exit a loop entirely when we reach it, so if we had this:
+	5
+	4
+	2
+	1
+	0
 
-for(int iterator = 5; iterator >= 0; iterator--){
-	if (iterator == 3){
-	break;
+Notice that the 3 is missing. When our iterator is equal to three, we are told to continue. This means that the flow of that iteration will never print three, and will instead skip to two and conitnue to proceed with the loop.
+
+### Break Statement
+
+**Break statements** tell us to exit a loop entirely when we reach it. For example:
+
+	for(int iterator = 5; iterator >= 0; iterator--){
+		if (iterator == 3){
+		break;
+		}
+		cout << iterator << endl;
 	}
-	cout << iterator << endl;
-}
+	
+This example will print:
+	
+	5
+	4
 
-It would print:
-5
-4
-Because when iterator is equal to three, we're told to exit the loop entirely!
+When iterator is equal to three, we're told to exit the loop entirely!
