@@ -90,3 +90,6 @@ Have fun!
 3. Recursive Functions
 
 **Exercise:** Implement a variety of functions
+
+1. Helper Function
+2. Recursive summation for int x
