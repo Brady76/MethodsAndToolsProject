@@ -19,225 +19,176 @@
 </div>
 <div id = "intro">
 	<p>
-		By now you've written your first C++ program, congratulations! Though the "Hello World" 
-		program may seem a bit trivial, programming is not limited to printing simple sentences on screens. 
-		In this chapter we're going to discuss variables as well as the data types *string*, *float*, *boolean*
-		, and *int*. Variables will allow us to go a little further with the capabilities of C++ and they will 
-		enable us to write programs that perform useful tasks.
+		In reference to functions, so far we've only worked with main() with the exception of some helper functions in a lab assignment.  In C++ a function is defined as a group of statements given a name, 
+		it's important that the main body of work goes inside a "main" function because C++ is conditioned to look for that name, but we can have other functions that will be referenced inside main.  
 	</p>
 </div>
 
 <div id="content"> 
-	<h1>Variables</h1>
+	<h1>Function Basics</h1>
 	<p>
-		A variable provides us with named storage that our programs can manipulate. Each variable in C++ has a specific 
-		type, which determines the size and layout of the variable's memory; the range of values that can be stored within 
-		that memory; and the set of operations that can be applied to the variable. </p>
-	<p>
-		So why use variables? Suppose we are asked to remember the number 2, and then we are asked to also memorize the number 
-		7 at the same time. We now have 2 different values stored in our memory (2 and 7). Now, if we were asked to add 1 to the 
-		first number stired, we should retain the numbers 3 (that is 2+1) and 7 in our memory. Then we could, for example, add 
-		these values and obtain 10 as result.
+		The syntax for a function is:
 	</p>
-	
 	<pre>
-		a = 2;
-		b = 7;
-		a = a + 1;
-		result = a + b;
+		type name(parameter, parameter, parameter,...){
+			statement
+			statement
+			...
+		}
 	</pre>
 	<p>
-		Considering the fact that we've only used two small integer values, the previous example is pretty trivial. However, your 
-		computer can store millions of numbers like these at the same time and conduct sophisticated mathematical operations with 
-		them.
+		An example of how you might use functions could be like this (This will also help explain what's going on in the previous lab assignment if you got confused)
+	</p>
+	<pre>
+		int functolicious(int x, int y, int z){
+		}
+	</pre>
+	<pre>
+		string repeatthrice(string x){
+		}
+	</pre>
+	<pre>
+		int main(){
+			if (functolicious(5, 10, 3) == 0)\
+			{
+				cout << "Functolicious Passed!" << endl;
+			}
+			else
+			{
+				cout << "Functolicious failed." << endl;
+			}
+			if (repeatthrice("hello") == "hellohellohello")
+			{
+				cout << "repeatthrice passed!" << endl;
+			}
+			else
+			{
+				cout << "repeatthrice failed." << endl;
+			}	
+	</pre>
+	<p>
+		So first the program would be conditioned to go to the main function, it reads the line:
+	</p>
+	<pre>
+		if (functolicious(5, 10, 3) == 0)
+	</pre>
+	<p>
+		When you use the name of a function and send it it's parameters (in this case 5, 10, and 3) that's known as a "function call"
 	</p>
 	<p>
-		Each variable needs a unique name that identifies it and distinguishes it from the others. For example, in the previous 
-		code the variable names were a, b, and result, but we could have called the variables any names we could have come up with, 
-		as long as they were valid C++ identifiers.
+		We have functolicious set up like so:
+	</p>
+	<pre>
+		int functolicious(int x, int y, int z){
+		}
+	</pre>
+	<p>
+		The return type of the function is int, the name is functolicious, and it's parameters are three int's we called x y and z, so when we did our function call functolicious(5, 10, 3) we're pretty much
+		saying:
+	</p>
+	<pre>
+		x = 5;
+		y = 10;
+		z = 3;
+	</pre>
+	<p>
+		And then going from there! The last statement of the function has to be:
+	</p>
+	<pre>
+		return value;
+	</pre>
+	<p>
+		In this case, because we need something to send back to main since it was called there, that value that is returned is then compared to 0 and the function main continues!
+		Generally if theres a set of statements you want some values to under go over and over again, you might find it helpful to make a helper function to do it for you! 
 	</p>
 	<h1>
-		Identifiers
+		Void Functions
 	</h1>
 	<p>
-		An identifier is any sequence of one or more characters including the underscore (_) excluding symbols, punctuation marks, 
-		and spaces. This identifier however can't be the same as the predefined keywords of C++ that indicate operations.  It's 
-		also important to note that C++ is case sensitive, so the indentifier "ITERATOR" wouldn't be the same as "iterator", 
-		for example. 
+		Sometimes we might want a function to do something that doesn't require returning a value back to main. Say we're in need of morale support, so we want to make a void function to cheer us on!
+		We might write it like this:
+	</p>
+	<pre>
+		#include <iostream>
+			using namespace std;
+			
+			void moralesupport(){
+				cout << "You can do it!" << endl;
+			}
+			int main(){
+				moralesupport();
+			}
+	</pre>
+	<h2>
+		Some things you might have noticed..
+	</h2>
+	<p>
+		First off, you might have noticed that whenver we are referencing a function there are always some form of parentheses involved, that's so the compiler can differentiate between variables and a function.
+		So x can be different than x() for example.
+	</p>
+	<p>
+		Another thing is that you might be wondering why main() has no return statement, it does! Kind of, the compiler automatically assumes in main that we will return 0 which essentially evaluates to
+		nothing. 
 	</p>
 	<h1>
-		Declaring Variables
+		Recursive Functions
 	</h1>
 	<p>
-		Before we use any variables, we must declare it and its type before we can use it. This informs the compiler the size to 
-		reserve in memory for the variable and how to interpret its value. The syntax to declare a new variable in C++ is 
-		straightforward: we simply write the type followed by the variable name (i.e., its identifier). For example:
+		This is a complicated concept, but it's very useful.  It's based off the principle that functions are able to call themselves!
+		The most basic example of a recursive function is one that solves factorials.  Here's an example:
 	</p>
 	<pre>
-		int a;
-		float thenumber;
+		#include <iostream>
+			using namespace std;
+			int factorial(int x){
+				if( x > 1){
+					return(x * factorial(x-1));
+					}
+					else
+					{
+						return 1;
+					}
+					}
+			int main(){
+				int x = 5;
+				cout << factorial(x) << endl;
+				}
 	</pre>
-	
 	<p>
-		These are two valid declarations of variables. The first one declares a variable of type int with the identifier a. The second one declares a variable of type float with the identifier thenumber. Once declared, the variables a and thenumber can be used within the rest of their scope in the program.
+		We can see in main that we're just sending 5 to the function factorial to be printed out, but in the factorial function we can see that it calls itself when x is greater than 1!
 	</p>
 	<p>
-		If we want to declare one or more variables of the same type, they can all be declared in a single statement by separating their identifiers with commas. For example:
+		An important thing to set up is a base case, in this function our base case is the:
 	</p>
 	<pre>
-		int a, b, c;
+		else
+		{
+			return 1;
+		}
 	</pre>
 	<p>
-		In this example, we have declared three variables of type int with the identifier a, b and c. This is the equivalent to the following code:
-	</p>
-	<pre>
-		int a;
-		int b;
-		int c;
-	</pre>
-	<h1>
-		Initializing Variables
-	</h1>
-	<p>
-		After variables are declared, they have an undetermined value until they are assigned a value for the first time. Initialization is when we give the variable a specific value.
+		A base case is rock bottom, once we hit rock bottom we can start returning upwards to get our final result.  I'll elaborate more on that in a bit.
 	</p>
 	<p>
-		In C++, there are three ways to initialize variables. They are all equivalent and are reminiscent of the evolution of the language over the years:
+		Our recursive function traverses like this:
 	</p>
 	<p>
-		The first one, known as c-like initialization (because it is inherited from the C language), consists of appending an equal sign followed by the value to which the variable is initialized:
+		We have the line return(x * factorial(x-1)), in this case, x is 5 so it reads: 
+		5 * factorial(4), and factorial 4 will evaluate to be 4 * factorial(3), extrapolating we get:
+		5 * 4 * 3 * 2 * factorial(1), and so when we get to 1 we hit our base case, where we're told to just return 1 instead of going any deeper down the rabbit hole recursively!
+		So we get our final answer, which is 120!
 	</p>
-	<p>
-	<b>
-		type identifier = initial_value;
-	</b>
-	</p>
-	<p>
-		For example, to declare a variable of type int called x and initialize it to a value of zero from the same moment it is declared, we can write:
-	</p>
-	<pre>
-		int a = 5;
-	</pre>
-	<p>
-		The second way, which is known as constructor initialization (introduced by the C++ language), encloses the initial value between parentheses (()):
-	</p>
-	<p>
-	<b> type identifier (initial value);</b>
-	</p>
-	<p>
-		For Example:
-	</p>
-	<pre>
-		int a (5);
-	</pre>
-	<p>
-		The third way, which is known as uniform initialization, uses a similar method to the previous example, but it uses curly braces ({}) instead of parentheses (this was introduced by the revision of the C++ standard, in 2011):
-	</p>
-	<p>
-		<b>
-		type identifier {initial_value};
-		</b>
-	</p>
-	<p>
-		For example:
-	</p>
-	<pre>
-		int a {5};
-	</pre>
-	<p>
-		Any of these ways are valid ways to declare variables, but it is good practice to write code that is consistent. If you choose to use constructor initialization to declare one variable, make sure you use that method to declare all your variables for your whole program. This improves readability and helps you develop much cleaner code.
-	</p>
-	<h1>
-		Intro to Ints
-	</h1>
-	<p>
-		An integer type variable is a variable that can only hold whole numbers (eg. -2, -1, 0, 1, 2). 
-		C++ actually has four different integer variables available for use: <b>char, short, int, and long</b>. 
-		The only difference between these different integer types is that they have varying sizes — the larger integers 
-		can hold bigger numbers. For the sake of this tutorial, we will only be focusing on <b>int</b>.
-	</p>
-	<p>
-		In order to explain integers, we will declare and initialize the int, number.
-	</p>
-	<pre>
-		int Number;
-		int Number =5;
-	</pre>
-	<p>
-		Integers will pass in whole numbers. If you were to try to initialize the following values, you will get the following inputs:
-	</p>
-	<p>
-		1. Passing in decimals or non wole numbers: This will round your number down to the nearest whole number.
-	</p>
-	<pre>
-        int Number;
-        int Number = 5.5; //Only accepts whole numbers, so it will round down and return 5
-	</pre>
-	<p>
-		2. Passing in incorrect data types: you would get this message "error: invalid conversion from ‘const char*’ to ‘int’ [-fpermissive]"
-	</p>
-	<pre>
-        int Number;
-        Number = "String";
-	</pre>
-	<p>
-		3. Passing in true/false: Your number would be set to be equal to 1, if it was false it would be equal to 0, these are numerical values that represent true or false.
-	</p>
-	<pre>
-        int Number;
-        Number = true;
-	</pre>
-	<h1>
-		Intro to Floats
-	</h1>
-	<p>
-		To declare these variables we use the type name "float", for example:
-	</p>
-	<pre>
-		float Number = 5.5;	
-	</pre>
-	<p>
-		Notice something we did here, you can both declare and initialize a variable on the same line. This goes for all data types.	
-	</p>
-	<p>
-		Use floats for numbers with decimals since integers only hold whole numbers.
-	</p>
-	<h1>
-		Intro to Strings
-	</h1>
-	<p>
-		If we don't have any mathematical intentions for a data type and we just want a message, you might find it useful to use the data type string!
-		It's used just like every other data type we've worked with so far, but the message or value assigned to it must be within a pair of quotation marks, strings can hold all characters. 
-		An example:
-	</p>
-	<pre>
-        string mystring = "hello"
-	</pre>
-	<h1>
-		Intro to Booleans
-	</h1>
-	<p>
-		Booleans are an interesting data type, in C++ they're simply referred to as bools, and the variable name is just "bool".  They're made to hold either "true" or "false". Often they're used to work
-		conditional "if" statements and the like, which we'll get to later, but for now just know that the declaration of a boolean looks like:
-	</p>
-	<pre>
-        bool myboolean = true;
-	</pre>
-	<p> or </p>
-	<pre>
-        bool myboolean = false;	
-	</pre>
 </div>
 
 
 <div id ="assignment">
-	<h1> Assignment # 2: Variables and Types Quiz </h1>
+	<h1> Assignment # 4.2: Functions </h1>
 	<p>
-		 For this assignment we've made an HTML quiz for you...
+		We have a coding assignment for you to work on, follow the instructions in the comments above each function and run it when you're done to see if you passed.
 	</p>
-	<p>
-		 [COMPLETE LATER ONCE HTML IMPLEMENTATION IS FINISHED]
-	</p>	 
+	<a href = "L42Assignment.cpp" download> L4.2Assignment.cpp</a>
+
+	 
 	<p>	 
 		 Good Luck!
 	</p>
