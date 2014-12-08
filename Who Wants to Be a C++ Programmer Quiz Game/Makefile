@@ -9,4 +9,4 @@ all: millionaire.cpp
 	g++ millionaire.cpp -o millionaire
 	
 clean:
-	rm millionaire.o millionaire
+	rm millionaire
