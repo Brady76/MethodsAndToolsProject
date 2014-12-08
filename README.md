@@ -14,7 +14,7 @@ We've provided 2 ways in which you can access these lessons. You can either **cl
 
 **If you choose to access our HTML Website**
 
-1. Go to [I'm an inline-style link](http://howtolearncplusplustutorialandgame.com/homepage.html)
+1. Go to [Learn the Basics of C++ ](http://howtolearncplusplustutorialandgame.com/homepage.html)
 2. You can download lesson excercises as you go along, as well as the C++ Quiz game.
 
 **If you choose to simply navigate through this repository:**
