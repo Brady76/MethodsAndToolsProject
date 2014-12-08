@@ -12,13 +12,10 @@ We've provided 2 ways in which you can access these lessons. You can either **cl
 2. Enter the command: "git clone https://github.com/Bradyta/MethodsAndToolsProject.git"
 3. The repository should clone into whatever directory you have specified.
 
-**If you choose to use HTML**
+**If you choose to access our HTML Website**
 
-1. Open the HTML documentation file provided in this repo
-2. Download the files given in the repo.
-3. Once you have downloaded the specified files, you will be able to access all these lessons through your web browser!
-⋅⋅1. You will be able to download the lesson excercises as you go along
-⋅⋅2. You will have full access to the Who Wants to be a C++ Programmer quiz game
+1. Go to [I'm an inline-style link](http://howtolearncplusplustutorialandgame.com/homepage.html)
+2. You can download lesson excercises as you go along, as well as the C++ Quiz game.
 
 **If you choose to simply navigate through this repository:**
 
