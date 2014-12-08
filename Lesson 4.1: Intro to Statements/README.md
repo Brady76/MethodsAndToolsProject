@@ -153,3 +153,11 @@ This example will print:
 	4
 
 When iterator is equal to three, we're told to exit the loop entirely!
+
+## Assignment
+
+For this assignment you will be asked to implement a program using the various statments you've learned in this tutorial. For this exercise, you will be asked to:
+
+1. Use an if and else statement to determine if value x is even or odd, return true if it's even, odd if it's false
+2. Use a for loop to make a summation function. A summation is similar to a factorial except you add all the previous iterations. The summation of 5, for example, is equal to 5 + 4 + 3 + 2 + 1
+3. Implement Batman's theme song using a while loop 
