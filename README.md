@@ -2,6 +2,29 @@
 
 Welcome to the C++ tutorials! The lessons in these tutorials are primarily designed to help beginning level programmers get a hands on grasp of the fundamentals of C++. Each turtorial is broken down into sections which contain examples, in depth explainations of code, and practice files for users to implement and test their own code! there is no suggested amount of time that you should spend with each section; progress through the material at a pace that is comfortable for you.
 
+## Accessing These Lessons
+
+We've provided 2 ways in which you can access these lessons. You can either **clone** this git hub repository, or download an HTML server that we have provided.
+
+If you choose to use git to download this repository:
+1. Open your terminal
+2. Enter the command: "git clone https://github.com/Bradyta/MethodsAndToolsProject.git"
+3. The repository should clone into whatever directory you have specified.
+
+If you choose to use HTML
+1. Open the HTML documentation file provided in this repo
+2. Download the files given in the repo.
+3. Once you have downloaded the specified files, you will be able to access all these lessons through your web browser!
+⋅⋅1. You will be able to download the lesson excercises as you go along
+⋅⋅2. You will have full access to the Who Wants to be a C++ Programmer quiz game
+
+If you choose to simply navigate through this repository:
+1. You can navigate through the lessons freely.
+2. You will be able to download the lesson excercises as you go along!
+3.You will have full access to the Who Wants to be a C++ Programmer quiz game!
+
+The lessons are identical for each method, so choosing which medium you want to go through these tutorials with is all up to your personal preference!
+
 Before we get started, you will find that each chapter of this curriculum will be structured in a similar fashion.
 
 ## Lesson
