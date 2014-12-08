@@ -9,7 +9,7 @@ void question15(){
 	
 	cout<<"\n\n";
 	cout<<"\t ------------------------------------------------------------\n";
-	cout<<"\t|                 Final Question!: $1,00,000                 |\n";
+	cout<<"\t|                 Final Question!: $1,000,000                |\n";
 	cout<<"\t ------------------------------------------------------------\n";
 	cout<<"\t|       What does the following code return?                 |\n";
 	cout<<"\t|     int a(int x) {                                         |\n";
