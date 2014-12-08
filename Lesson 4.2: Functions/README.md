@@ -105,6 +105,7 @@ When setting up recursive functions, we must always set up a __base case__,  or 
 When our function hits our base case (in this case, 1), our program has nothing left to recursively operate on and terminates.
 
 Let's examine our example. 
+
 1. We have the line return(x * factorial(x-1)), in this case, x is 5 so it reads: 
 2. 5 * factorial(4), and factorial 4 will evaluate to be 4 * factorial(3)
 3. Extrapolating we get: 5 * 4 * 3 * 2 * factorial(1)
