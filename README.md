@@ -65,7 +65,7 @@ Who Wants to Be a C++ Programmer Quiz Game:
 7. Fix errors
 8. Recompile untils errors complete
 9. Hit the gear button on Geany which will run the tests.
-10. Further instructions on how to use the Game file is listed below.
+10. Further instructions on how to use the Game file is listed on the website.
 
 ## Lesson
 
