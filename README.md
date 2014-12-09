@@ -4,28 +4,37 @@ Welcome to the C++ tutorials! The lessons in these tutorials are primarily desig
 
 ## Accessing These Lessons
 
-We've provided 2 ways in which you can access these lessons. You can either **clone** this git hub repository, or download an HTML server that we have provided.
 
-**If you choose to use git to download this repository:**
-
-1. Open your terminal
-2. Enter the command: "git clone https://github.com/Bradyta/MethodsAndToolsProject.git"
-3. The repository should clone into whatever directory you have specified.
-
-**If you choose to access our HTML Website**
+**Access our HTML Website**
 
 1. Go to [C++ Tutorials!:Learning the Basics](http://howtolearncplusplustutorialandgame.com/homepage.html)
 2. You can download lesson excercises as you go along, as well as the C++ Quiz game.
 
-**If you choose to simply navigate through this repository:**
+**Repository Organization:**
+C++: Learn How To Code Website: 
+	All Website Implementation including:
+	.cpp files and all html and css files
 
-1. You can navigate through the lessons freely.
-2. You will be able to download the lesson excercises as you go along!
-3. You will have full access to the Who Wants to be a C++ Programmer quiz game!
+Lesson 1: Basic Structure of C++:
 
-The lessons are identical for each method, so choosing which medium you want to go through these tutorials with is all up to your personal preference!
+	File: L1: assignment holds HelloWorld.cpp
+	README: Lesson Plan
 
-Before we get started, you will find that each chapter of this curriculum will be structured in a similar fashion.
+Lesson 2: Variables and Types:
+	README: Lesson Plan
+Lesson 3: Operators and Arithmetic
+	File: L3: Assignment holds L3Assignment.cpp
+	README: Lesson Plan
+Lesson 4.1:Intro to Statements:
+	File: L3: Assignment holds L41Assignment.cpp
+	README: Lesson Plan
+Lesson 4.2: Functions:
+	File: L3: Assignment holds L42Assignment.cpp
+	README: Lesson Plan
+Who Wants to Be a C++ Programmer Quiz Game:
+	File: Makefile
+	File: millionaire.cpp
+	README: Explanation of Game
 
 ## Lesson
 
