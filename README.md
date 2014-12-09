@@ -11,6 +11,8 @@ Welcome to the C++ tutorials! The lessons in these tutorials are primarily desig
 2. You can download lesson excercises as you go along, as well as the C++ Quiz game.
 
 **Repository Organization:**
+
+
 C++: Learn How To Code Website: 
 	All Website Implementation including:
 	.cpp files and all html and css files
@@ -21,19 +23,33 @@ Lesson 1: Basic Structure of C++:
 	README: Lesson Plan
 
 Lesson 2: Variables and Types:
+
 	README: Lesson Plan
+
 Lesson 3: Operators and Arithmetic
+
 	File: L3: Assignment holds L3Assignment.cpp
+
 	README: Lesson Plan
+
 Lesson 4.1:Intro to Statements:
+
 	File: L3: Assignment holds L41Assignment.cpp
+
 	README: Lesson Plan
+
 Lesson 4.2: Functions:
+
 	File: L3: Assignment holds L42Assignment.cpp
+
 	README: Lesson Plan
+
 Who Wants to Be a C++ Programmer Quiz Game:
+
 	File: Makefile
+
 	File: millionaire.cpp
+
 	README: Explanation of Game
 
 ## Lesson
