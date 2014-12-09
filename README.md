@@ -52,6 +52,21 @@ Who Wants to Be a C++ Programmer Quiz Game:
 
 	README: Explanation of Game
 
+## How to Run Code
+
+1. You will have to be in an environment that can run Geany and .cpp files
+2. We can use the VM.
+3. Under Assignments on almost every pages is a link that
+	you clicking in order to download the files.
+4. Once you download them open the files up in Geany
+
+5. In order to run the assignment files. Complete Task
+6. On Geany click the Compile button
+7. Fix errors
+8. Recompile untils errors complete
+9. Hit the gear button on Geany which will run the tests.
+10. Further instructions on how to use the Game file is listed below.
+
 ## Lesson
 
 In order to code, it is important to understand the basic concept on how C++ works. Each section will contain a README.md file that provides a detailed description on how the specific topic covered works, and a tutorial on how to implement that specific code.
